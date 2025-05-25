@@ -1,0 +1,898 @@
+2025-05-25 00:05:11.017 +05:30 [INF] Application is shutting down...
+2025-05-25 00:06:52.775 +05:30 [INF] User profile is available. Using 'C:\Users\hitha\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-25 00:06:52.961 +05:30 [INF] Now listening on: http://localhost:5251
+2025-05-25 00:06:52.967 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-25 00:06:52.973 +05:30 [INF] Hosting environment: Development
+2025-05-25 00:06:52.974 +05:30 [INF] Content root path: C:\Users\hitha\WisVest-AI\Sprint 2 backend
+2025-05-25 00:06:59.824 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/ - null null
+2025-05-25 00:07:00.078 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/ - 404 0 null 259.0686ms
+2025-05-25 00:07:00.096 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5251/, Response status code: 404
+2025-05-25 00:07:05.594 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/swagger/index.html - null null
+2025-05-25 00:07:05.688 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/swagger/index.html - 200 null text/html;charset=utf-8 94.2803ms
+2025-05-25 00:07:05.925 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/swagger/v1/swagger.json - null null
+2025-05-25 00:07:06.021 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 95.7821ms
+2025-05-25 00:07:35.003 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5251/api/chatbot/ask - application/json 30
+2025-05-25 00:07:35.009 +05:30 [INF] CORS policy execution failed.
+2025-05-25 00:07:35.014 +05:30 [INF] Request origin http://localhost:5251 does not have permission to access the resource.
+2025-05-25 00:07:35.038 +05:30 [INF] Executing endpoint 'YourNamespace.Controllers.ChatbotController.Ask (WisVest)'
+2025-05-25 00:07:35.086 +05:30 [INF] Route matched with {action = "Ask", controller = "Chatbot"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ask(YourNamespace.Controllers.ChatRequest) on controller YourNamespace.Controllers.ChatbotController (WisVest).
+2025-05-25 00:07:35.162 +05:30 [INF] Start processing HTTP request POST https://api-inference.huggingface.co/models/google/flan-t5-base
+2025-05-25 00:07:35.168 +05:30 [INF] Sending HTTP request POST https://api-inference.huggingface.co/models/google/flan-t5-base
+2025-05-25 00:07:36.395 +05:30 [INF] Received HTTP response headers after 1223.7966ms - 404
+2025-05-25 00:07:36.401 +05:30 [INF] End processing HTTP request after 1244.3766ms - 404
+2025-05-25 00:07:36.422 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2025-05-25 00:07:36.430 +05:30 [INF] Executed action YourNamespace.Controllers.ChatbotController.Ask (WisVest) in 1338.4852ms
+2025-05-25 00:07:36.431 +05:30 [INF] Executed endpoint 'YourNamespace.Controllers.ChatbotController.Ask (WisVest)'
+2025-05-25 00:07:36.435 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5251/api/chatbot/ask - 404 null text/plain; charset=utf-8 1432.3634ms
+2025-05-25 00:07:56.689 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5251/api/chatbot/ask - application/json 31
+2025-05-25 00:07:56.702 +05:30 [INF] CORS policy execution failed.
+2025-05-25 00:07:56.707 +05:30 [INF] Request origin http://localhost:5251 does not have permission to access the resource.
+2025-05-25 00:07:56.708 +05:30 [INF] Executing endpoint 'YourNamespace.Controllers.ChatbotController.Ask (WisVest)'
+2025-05-25 00:07:56.709 +05:30 [INF] Route matched with {action = "Ask", controller = "Chatbot"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ask(YourNamespace.Controllers.ChatRequest) on controller YourNamespace.Controllers.ChatbotController (WisVest).
+2025-05-25 00:07:56.788 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-05-25 00:07:56.839 +05:30 [INF] Executed action YourNamespace.Controllers.ChatbotController.Ask (WisVest) in 129.1566ms
+2025-05-25 00:07:56.842 +05:30 [INF] Executed endpoint 'YourNamespace.Controllers.ChatbotController.Ask (WisVest)'
+2025-05-25 00:07:56.843 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5251/api/chatbot/ask - 400 null application/problem+json; charset=utf-8 154.2417ms
+2025-05-25 00:08:24.097 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5251/api/chatbot/ask - application/json 32
+2025-05-25 00:08:24.103 +05:30 [INF] CORS policy execution failed.
+2025-05-25 00:08:24.104 +05:30 [INF] Request origin http://localhost:5251 does not have permission to access the resource.
+2025-05-25 00:08:24.106 +05:30 [INF] Executing endpoint 'YourNamespace.Controllers.ChatbotController.Ask (WisVest)'
+2025-05-25 00:08:24.109 +05:30 [INF] Route matched with {action = "Ask", controller = "Chatbot"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ask(YourNamespace.Controllers.ChatRequest) on controller YourNamespace.Controllers.ChatbotController (WisVest).
+2025-05-25 00:08:24.113 +05:30 [INF] Start processing HTTP request POST https://api-inference.huggingface.co/models/google/flan-t5-base
+2025-05-25 00:08:24.113 +05:30 [INF] Sending HTTP request POST https://api-inference.huggingface.co/models/google/flan-t5-base
+2025-05-25 00:08:25.505 +05:30 [INF] Received HTTP response headers after 1390.6469ms - 404
+2025-05-25 00:08:25.507 +05:30 [INF] End processing HTTP request after 1394.8271ms - 404
+2025-05-25 00:08:25.511 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2025-05-25 00:08:25.513 +05:30 [INF] Executed action YourNamespace.Controllers.ChatbotController.Ask (WisVest) in 1401.2171ms
+2025-05-25 00:08:25.517 +05:30 [INF] Executed endpoint 'YourNamespace.Controllers.ChatbotController.Ask (WisVest)'
+2025-05-25 00:08:25.520 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5251/api/chatbot/ask - 404 null text/plain; charset=utf-8 1423.35ms
+2025-05-25 00:22:24.894 +05:30 [INF] Application is shutting down...
+2025-05-25 00:22:33.731 +05:30 [INF] User profile is available. Using 'C:\Users\hitha\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-25 00:22:33.840 +05:30 [INF] Now listening on: http://localhost:5251
+2025-05-25 00:22:33.843 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-25 00:22:33.844 +05:30 [INF] Hosting environment: Development
+2025-05-25 00:22:33.845 +05:30 [INF] Content root path: C:\Users\hitha\WisVest-AI\Sprint 2 backend
+2025-05-25 00:22:36.317 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/ - null null
+2025-05-25 00:22:36.380 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/ - 404 0 null 64.7406ms
+2025-05-25 00:22:36.387 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5251/, Response status code: 404
+2025-05-25 00:22:47.535 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/swagger/index.html - null null
+2025-05-25 00:22:47.704 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/swagger/index.html - 200 null text/html;charset=utf-8 169.7691ms
+2025-05-25 00:22:47.807 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/swagger/v1/swagger.json - null null
+2025-05-25 00:22:47.931 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 123.8157ms
+2025-05-25 00:23:09.077 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5251/api/chatbot/ask - application/json 33
+2025-05-25 00:23:09.102 +05:30 [INF] CORS policy execution failed.
+2025-05-25 00:23:09.106 +05:30 [INF] Request origin http://localhost:5251 does not have permission to access the resource.
+2025-05-25 00:23:09.109 +05:30 [INF] Executing endpoint 'YourNamespace.Controllers.ChatbotController.Ask (WisVest)'
+2025-05-25 00:23:09.147 +05:30 [INF] Route matched with {action = "Ask", controller = "Chatbot"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ask(YourNamespace.Controllers.ChatRequest) on controller YourNamespace.Controllers.ChatbotController (WisVest).
+2025-05-25 00:23:09.226 +05:30 [INF] Start processing HTTP request POST https://api-inference.huggingface.co/google/flan-t5-base
+2025-05-25 00:23:09.230 +05:30 [INF] Sending HTTP request POST https://api-inference.huggingface.co/google/flan-t5-base
+2025-05-25 00:23:12.710 +05:30 [INF] Received HTTP response headers after 3475.9345ms - 404
+2025-05-25 00:23:12.714 +05:30 [INF] End processing HTTP request after 3490.6652ms - 404
+2025-05-25 00:23:12.724 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2025-05-25 00:23:12.731 +05:30 [INF] Executed action YourNamespace.Controllers.ChatbotController.Ask (WisVest) in 3578.3652ms
+2025-05-25 00:23:12.735 +05:30 [INF] Executed endpoint 'YourNamespace.Controllers.ChatbotController.Ask (WisVest)'
+2025-05-25 00:23:12.739 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5251/api/chatbot/ask - 404 null text/plain; charset=utf-8 3661.9823ms
+2025-05-25 00:32:44.359 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/swagger/index.html - null null
+2025-05-25 00:32:44.375 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/swagger/index.html - 200 null text/html;charset=utf-8 16.0918ms
+2025-05-25 00:32:44.550 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/swagger/v1/swagger.json - null null
+2025-05-25 00:32:44.571 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 20.3457ms
+2025-05-25 00:33:21.344 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5251/api/chatbot/ask - application/json 34
+2025-05-25 00:33:21.350 +05:30 [INF] CORS policy execution failed.
+2025-05-25 00:33:21.351 +05:30 [INF] Request origin http://localhost:5251 does not have permission to access the resource.
+2025-05-25 00:33:21.353 +05:30 [INF] Executing endpoint 'YourNamespace.Controllers.ChatbotController.Ask (WisVest)'
+2025-05-25 00:33:21.356 +05:30 [INF] Route matched with {action = "Ask", controller = "Chatbot"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ask(YourNamespace.Controllers.ChatRequest) on controller YourNamespace.Controllers.ChatbotController (WisVest).
+2025-05-25 00:33:21.373 +05:30 [INF] Start processing HTTP request POST https://api-inference.huggingface.co/google/flan-t5-base
+2025-05-25 00:33:21.376 +05:30 [INF] Sending HTTP request POST https://api-inference.huggingface.co/google/flan-t5-base
+2025-05-25 00:33:23.436 +05:30 [INF] Received HTTP response headers after 2058.56ms - 404
+2025-05-25 00:33:23.441 +05:30 [INF] End processing HTTP request after 2068.5032ms - 404
+2025-05-25 00:33:23.444 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2025-05-25 00:33:23.448 +05:30 [INF] Executed action YourNamespace.Controllers.ChatbotController.Ask (WisVest) in 2086.6377ms
+2025-05-25 00:33:23.456 +05:30 [INF] Executed endpoint 'YourNamespace.Controllers.ChatbotController.Ask (WisVest)'
+2025-05-25 00:33:23.463 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5251/api/chatbot/ask - 404 null text/plain; charset=utf-8 2118.5429ms
+2025-05-25 00:44:23.948 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5251/api/chatbot/ask - application/json 34
+2025-05-25 00:44:23.954 +05:30 [INF] CORS policy execution failed.
+2025-05-25 00:44:23.956 +05:30 [INF] Request origin http://localhost:5251 does not have permission to access the resource.
+2025-05-25 00:44:23.959 +05:30 [INF] Executing endpoint 'YourNamespace.Controllers.ChatbotController.Ask (WisVest)'
+2025-05-25 00:44:23.961 +05:30 [INF] Route matched with {action = "Ask", controller = "Chatbot"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ask(YourNamespace.Controllers.ChatRequest) on controller YourNamespace.Controllers.ChatbotController (WisVest).
+2025-05-25 00:44:23.963 +05:30 [INF] Start processing HTTP request POST https://api-inference.huggingface.co/google/flan-t5-base
+2025-05-25 00:44:23.964 +05:30 [INF] Sending HTTP request POST https://api-inference.huggingface.co/google/flan-t5-base
+2025-05-25 00:44:25.949 +05:30 [INF] Received HTTP response headers after 1975.2119ms - 404
+2025-05-25 00:44:25.957 +05:30 [INF] End processing HTTP request after 1993.5793ms - 404
+2025-05-25 00:44:25.961 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2025-05-25 00:44:25.963 +05:30 [INF] Executed action YourNamespace.Controllers.ChatbotController.Ask (WisVest) in 2001.1911ms
+2025-05-25 00:44:25.966 +05:30 [INF] Executed endpoint 'YourNamespace.Controllers.ChatbotController.Ask (WisVest)'
+2025-05-25 00:44:25.968 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5251/api/chatbot/ask - 404 null text/plain; charset=utf-8 2019.5753ms
+2025-05-25 00:47:10.170 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5251/api/chatbot/ask - application/json 34
+2025-05-25 00:47:10.180 +05:30 [INF] CORS policy execution failed.
+2025-05-25 00:47:10.181 +05:30 [INF] Request origin http://localhost:5251 does not have permission to access the resource.
+2025-05-25 00:47:10.183 +05:30 [INF] Executing endpoint 'YourNamespace.Controllers.ChatbotController.Ask (WisVest)'
+2025-05-25 00:47:10.184 +05:30 [INF] Route matched with {action = "Ask", controller = "Chatbot"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ask(YourNamespace.Controllers.ChatRequest) on controller YourNamespace.Controllers.ChatbotController (WisVest).
+2025-05-25 00:47:10.189 +05:30 [INF] Start processing HTTP request POST https://api-inference.huggingface.co/google/flan-t5-base
+2025-05-25 00:47:10.189 +05:30 [INF] Sending HTTP request POST https://api-inference.huggingface.co/google/flan-t5-base
+2025-05-25 00:47:11.551 +05:30 [INF] Received HTTP response headers after 1360.764ms - 404
+2025-05-25 00:47:11.558 +05:30 [INF] End processing HTTP request after 1369.4068ms - 404
+2025-05-25 00:47:11.567 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2025-05-25 00:47:11.572 +05:30 [INF] Executed action YourNamespace.Controllers.ChatbotController.Ask (WisVest) in 1384.2049ms
+2025-05-25 00:47:11.579 +05:30 [INF] Executed endpoint 'YourNamespace.Controllers.ChatbotController.Ask (WisVest)'
+2025-05-25 00:47:11.584 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5251/api/chatbot/ask - 404 null text/plain; charset=utf-8 1413.8981ms
+2025-05-25 00:48:20.142 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5251/api/chatbot/ask - application/json 34
+2025-05-25 00:48:20.146 +05:30 [INF] CORS policy execution failed.
+2025-05-25 00:48:20.147 +05:30 [INF] Request origin http://localhost:5251 does not have permission to access the resource.
+2025-05-25 00:48:20.147 +05:30 [INF] Executing endpoint 'YourNamespace.Controllers.ChatbotController.Ask (WisVest)'
+2025-05-25 00:48:20.148 +05:30 [INF] Route matched with {action = "Ask", controller = "Chatbot"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ask(YourNamespace.Controllers.ChatRequest) on controller YourNamespace.Controllers.ChatbotController (WisVest).
+2025-05-25 00:48:20.152 +05:30 [INF] Start processing HTTP request POST https://api-inference.huggingface.co/google/flan-t5-base
+2025-05-25 00:48:20.155 +05:30 [INF] Sending HTTP request POST https://api-inference.huggingface.co/google/flan-t5-base
+2025-05-25 00:48:20.885 +05:30 [INF] Received HTTP response headers after 726.0025ms - 404
+2025-05-25 00:48:20.891 +05:30 [INF] End processing HTTP request after 738.4579ms - 404
+2025-05-25 00:48:20.896 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2025-05-25 00:48:20.901 +05:30 [INF] Executed action YourNamespace.Controllers.ChatbotController.Ask (WisVest) in 749.7613ms
+2025-05-25 00:48:20.906 +05:30 [INF] Executed endpoint 'YourNamespace.Controllers.ChatbotController.Ask (WisVest)'
+2025-05-25 00:48:20.908 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5251/api/chatbot/ask - 404 null text/plain; charset=utf-8 765.7978ms
+2025-05-25 00:48:28.336 +05:30 [INF] Application is shutting down...
+2025-05-25 00:51:19.190 +05:30 [INF] User profile is available. Using 'C:\Users\hitha\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-25 00:51:19.309 +05:30 [INF] Now listening on: http://localhost:5251
+2025-05-25 00:51:19.313 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-25 00:51:19.315 +05:30 [INF] Hosting environment: Development
+2025-05-25 00:51:19.317 +05:30 [INF] Content root path: C:\Users\hitha\WisVest-AI\Sprint 2 backend
+2025-05-25 00:51:23.828 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/ - null null
+2025-05-25 00:51:24.083 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/ - 404 0 null 268.0081ms
+2025-05-25 00:51:24.102 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5251/, Response status code: 404
+2025-05-25 00:51:31.364 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/swagger/index.html - null null
+2025-05-25 00:51:31.443 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/swagger/index.html - 200 null text/html;charset=utf-8 79.4444ms
+2025-05-25 00:51:31.625 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/swagger/v1/swagger.json - null null
+2025-05-25 00:51:31.734 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 108.8298ms
+2025-05-25 00:52:15.787 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5251/api/chatbot/ask - application/json 35
+2025-05-25 00:52:15.799 +05:30 [INF] CORS policy execution failed.
+2025-05-25 00:52:15.808 +05:30 [INF] Request origin http://localhost:5251 does not have permission to access the resource.
+2025-05-25 00:52:15.811 +05:30 [INF] Executing endpoint 'WisVestAPI.Controllers.ChatbotController.Ask (WisVest)'
+2025-05-25 00:52:15.855 +05:30 [INF] Route matched with {action = "Ask", controller = "Chatbot"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ask(WisVestAPI.Models.ChatRequest) on controller WisVestAPI.Controllers.ChatbotController (WisVest).
+2025-05-25 00:52:15.928 +05:30 [INF] Start processing HTTP request POST https://api-inference.huggingface.co/models/google/flan-t5-base
+2025-05-25 00:52:15.931 +05:30 [INF] Sending HTTP request POST https://api-inference.huggingface.co/models/google/flan-t5-base
+2025-05-25 00:52:21.667 +05:30 [INF] Received HTTP response headers after 5729.5243ms - 404
+2025-05-25 00:52:21.673 +05:30 [INF] End processing HTTP request after 5747.1305ms - 404
+2025-05-25 00:52:21.697 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2025-05-25 00:52:21.772 +05:30 [INF] Executed action WisVestAPI.Controllers.ChatbotController.Ask (WisVest) in 5905.4027ms
+2025-05-25 00:52:21.774 +05:30 [INF] Executed endpoint 'WisVestAPI.Controllers.ChatbotController.Ask (WisVest)'
+2025-05-25 00:52:21.778 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5251/api/chatbot/ask - 404 null text/plain; charset=utf-8 5990.4124ms
+2025-05-25 00:57:55.142 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5251/api/chatbot/ask - application/json 55
+2025-05-25 00:57:55.211 +05:30 [INF] CORS policy execution failed.
+2025-05-25 00:57:55.218 +05:30 [INF] Request origin http://localhost:5251 does not have permission to access the resource.
+2025-05-25 00:57:55.223 +05:30 [INF] Executing endpoint 'WisVestAPI.Controllers.ChatbotController.Ask (WisVest)'
+2025-05-25 00:57:55.226 +05:30 [INF] Route matched with {action = "Ask", controller = "Chatbot"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ask(WisVestAPI.Models.ChatRequest) on controller WisVestAPI.Controllers.ChatbotController (WisVest).
+2025-05-25 00:57:55.235 +05:30 [INF] Start processing HTTP request POST https://api-inference.huggingface.co/models/google/flan-t5-base
+2025-05-25 00:57:55.238 +05:30 [INF] Sending HTTP request POST https://api-inference.huggingface.co/models/google/flan-t5-base
+2025-05-25 00:57:57.005 +05:30 [INF] Received HTTP response headers after 1766.6061ms - 404
+2025-05-25 00:57:57.011 +05:30 [INF] End processing HTTP request after 1775.7429ms - 404
+2025-05-25 00:57:57.015 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2025-05-25 00:57:57.025 +05:30 [INF] Executed action WisVestAPI.Controllers.ChatbotController.Ask (WisVest) in 1793.6187ms
+2025-05-25 00:57:57.037 +05:30 [INF] Executed endpoint 'WisVestAPI.Controllers.ChatbotController.Ask (WisVest)'
+2025-05-25 00:57:57.040 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5251/api/chatbot/ask - 404 null text/plain; charset=utf-8 1897.5722ms
+2025-05-25 00:58:04.895 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5251/api/chatbot/ask - application/json 56
+2025-05-25 00:58:04.909 +05:30 [INF] CORS policy execution failed.
+2025-05-25 00:58:04.909 +05:30 [INF] Request origin http://localhost:5251 does not have permission to access the resource.
+2025-05-25 00:58:04.910 +05:30 [INF] Executing endpoint 'WisVestAPI.Controllers.ChatbotController.Ask (WisVest)'
+2025-05-25 00:58:04.910 +05:30 [INF] Route matched with {action = "Ask", controller = "Chatbot"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ask(WisVestAPI.Models.ChatRequest) on controller WisVestAPI.Controllers.ChatbotController (WisVest).
+2025-05-25 00:58:04.912 +05:30 [INF] Start processing HTTP request POST https://api-inference.huggingface.co/models/google/flan-t5-base
+2025-05-25 00:58:04.919 +05:30 [INF] Sending HTTP request POST https://api-inference.huggingface.co/models/google/flan-t5-base
+2025-05-25 00:58:05.289 +05:30 [INF] Received HTTP response headers after 366.0361ms - 404
+2025-05-25 00:58:05.294 +05:30 [INF] End processing HTTP request after 382.108ms - 404
+2025-05-25 00:58:05.296 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2025-05-25 00:58:05.300 +05:30 [INF] Executed action WisVestAPI.Controllers.ChatbotController.Ask (WisVest) in 388.7701ms
+2025-05-25 00:58:05.307 +05:30 [INF] Executed endpoint 'WisVestAPI.Controllers.ChatbotController.Ask (WisVest)'
+2025-05-25 00:58:05.311 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5251/api/chatbot/ask - 404 null text/plain; charset=utf-8 415.5383ms
+2025-05-25 00:58:30.289 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5251/api/chatbot/ask - application/json 56
+2025-05-25 00:58:30.292 +05:30 [INF] CORS policy execution failed.
+2025-05-25 00:58:30.293 +05:30 [INF] Request origin http://localhost:5251 does not have permission to access the resource.
+2025-05-25 00:58:30.293 +05:30 [INF] Executing endpoint 'WisVestAPI.Controllers.ChatbotController.Ask (WisVest)'
+2025-05-25 00:58:30.294 +05:30 [INF] Route matched with {action = "Ask", controller = "Chatbot"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ask(WisVestAPI.Models.ChatRequest) on controller WisVestAPI.Controllers.ChatbotController (WisVest).
+2025-05-25 00:58:30.297 +05:30 [INF] Start processing HTTP request POST https://api-inference.huggingface.co/models/google/flan-t5-base
+2025-05-25 00:58:30.298 +05:30 [INF] Sending HTTP request POST https://api-inference.huggingface.co/models/google/flan-t5-base
+2025-05-25 00:58:31.304 +05:30 [INF] Received HTTP response headers after 1003.2788ms - 404
+2025-05-25 00:58:31.307 +05:30 [INF] End processing HTTP request after 1010.4428ms - 404
+2025-05-25 00:58:31.310 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2025-05-25 00:58:31.330 +05:30 [INF] Executed action WisVestAPI.Controllers.ChatbotController.Ask (WisVest) in 1033.5249ms
+2025-05-25 00:58:31.341 +05:30 [INF] Executed endpoint 'WisVestAPI.Controllers.ChatbotController.Ask (WisVest)'
+2025-05-25 00:58:31.346 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5251/api/chatbot/ask - 404 null text/plain; charset=utf-8 1054.416ms
+2025-05-25 00:58:40.079 +05:30 [INF] Application is shutting down...
+2025-05-25 00:58:48.338 +05:30 [INF] User profile is available. Using 'C:\Users\hitha\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-25 00:58:48.513 +05:30 [INF] Now listening on: http://localhost:5251
+2025-05-25 00:58:48.517 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-25 00:58:48.519 +05:30 [INF] Hosting environment: Development
+2025-05-25 00:58:48.520 +05:30 [INF] Content root path: C:\Users\hitha\WisVest-AI\Sprint 2 backend
+2025-05-25 00:58:50.768 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/ - null null
+2025-05-25 00:58:51.192 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/ - 404 0 null 454.9824ms
+2025-05-25 00:58:51.210 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5251/, Response status code: 404
+2025-05-25 00:58:58.470 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/swagger/index.html - null null
+2025-05-25 00:58:58.633 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/swagger/index.html - 200 null text/html;charset=utf-8 164.5291ms
+2025-05-25 00:58:58.751 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/swagger/v1/swagger.json - null null
+2025-05-25 00:58:58.890 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 138.681ms
+2025-05-25 01:23:52.170 +05:30 [INF] Application is shutting down...
+2025-05-25 01:26:37.208 +05:30 [INF] User profile is available. Using 'C:\Users\hitha\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-25 01:26:37.397 +05:30 [INF] Now listening on: http://localhost:5251
+2025-05-25 01:26:37.400 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-25 01:26:37.402 +05:30 [INF] Hosting environment: Development
+2025-05-25 01:26:37.404 +05:30 [INF] Content root path: C:\Users\hitha\WisVest-AI\Sprint 2 backend
+2025-05-25 01:26:40.272 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/ - null null
+2025-05-25 01:26:40.434 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/ - 404 0 null 163.9476ms
+2025-05-25 01:26:40.446 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5251/, Response status code: 404
+2025-05-25 01:26:47.594 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/swagger/index.html - null null
+2025-05-25 01:26:47.694 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/swagger/index.html - 200 null text/html;charset=utf-8 99.6589ms
+2025-05-25 01:26:47.794 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/swagger/v1/swagger.json - null null
+2025-05-25 01:26:47.902 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 108.0495ms
+2025-05-25 01:26:57.495 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/news/financial - null null
+2025-05-25 01:26:57.500 +05:30 [INF] Executing endpoint 'WisVestAPI.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 01:26:57.541 +05:30 [INF] Route matched with {action = "GetFinancialNews", controller = "News"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFinancialNews() on controller WisVestAPI.Controllers.NewsController (WisVest).
+2025-05-25 01:26:57.563 +05:30 [INF] Start processing HTTP request GET https://newsapi.org/v2/top-headlines?category=business&language=en&pageSize=5&apiKey=f9895a7322a945c1928c30b346eda917
+2025-05-25 01:26:57.570 +05:30 [INF] Sending HTTP request GET https://newsapi.org/v2/top-headlines?category=business&language=en&pageSize=5&apiKey=f9895a7322a945c1928c30b346eda917
+2025-05-25 01:26:58.913 +05:30 [INF] Received HTTP response headers after 1338.3328ms - 400
+2025-05-25 01:26:58.915 +05:30 [INF] End processing HTTP request after 1354.3393ms - 400
+2025-05-25 01:26:58.923 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2025-05-25 01:26:58.931 +05:30 [INF] Executed action WisVestAPI.Controllers.NewsController.GetFinancialNews (WisVest) in 1380.376ms
+2025-05-25 01:26:58.934 +05:30 [INF] Executed endpoint 'WisVestAPI.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 01:26:58.935 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/news/financial - 400 null text/plain; charset=utf-8 1440.3523ms
+2025-05-25 01:34:07.568 +05:30 [INF] Application is shutting down...
+2025-05-25 01:34:13.525 +05:30 [INF] User profile is available. Using 'C:\Users\hitha\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-25 01:34:13.636 +05:30 [INF] Now listening on: http://localhost:5251
+2025-05-25 01:34:13.642 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-25 01:34:13.643 +05:30 [INF] Hosting environment: Development
+2025-05-25 01:34:13.646 +05:30 [INF] Content root path: C:\Users\hitha\WisVest-AI\Sprint 2 backend
+2025-05-25 01:34:21.229 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/ - null null
+2025-05-25 01:34:21.342 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/ - 404 0 null 116.2331ms
+2025-05-25 01:34:21.368 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5251/, Response status code: 404
+2025-05-25 01:34:26.839 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/swagger/index.html - null null
+2025-05-25 01:34:26.930 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/swagger/index.html - 200 null text/html;charset=utf-8 91.777ms
+2025-05-25 01:34:27.018 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/swagger/v1/swagger.json - null null
+2025-05-25 01:34:27.131 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 113.4456ms
+2025-05-25 01:34:34.080 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/news/financial - null null
+2025-05-25 01:34:34.086 +05:30 [INF] Executing endpoint 'WisVestAPI.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 01:34:34.118 +05:30 [INF] Route matched with {action = "GetFinancialNews", controller = "News"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFinancialNews() on controller WisVestAPI.Controllers.NewsController (WisVest).
+2025-05-25 01:34:34.142 +05:30 [INF] Start processing HTTP request GET https://newsapi.org/v2/everything?q=tesla&from=2025-04-24&sortBy=publishedAt&apiKey=f9895a7322a945c1928c30b346eda917
+2025-05-25 01:34:34.148 +05:30 [INF] Sending HTTP request GET https://newsapi.org/v2/everything?q=tesla&from=2025-04-24&sortBy=publishedAt&apiKey=f9895a7322a945c1928c30b346eda917
+2025-05-25 01:34:35.547 +05:30 [INF] Received HTTP response headers after 1394.9108ms - 400
+2025-05-25 01:34:35.552 +05:30 [INF] End processing HTTP request after 1412.5884ms - 400
+2025-05-25 01:34:35.560 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2025-05-25 01:34:35.568 +05:30 [INF] Executed action WisVestAPI.Controllers.NewsController.GetFinancialNews (WisVest) in 1440.3279ms
+2025-05-25 01:34:35.573 +05:30 [INF] Executed endpoint 'WisVestAPI.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 01:34:35.576 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/news/financial - 400 null text/plain; charset=utf-8 1495.8654ms
+2025-05-25 01:35:55.903 +05:30 [INF] Application is shutting down...
+2025-05-25 01:35:59.844 +05:30 [INF] User profile is available. Using 'C:\Users\hitha\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-25 01:35:59.928 +05:30 [INF] Now listening on: http://localhost:5251
+2025-05-25 01:35:59.931 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-25 01:35:59.933 +05:30 [INF] Hosting environment: Development
+2025-05-25 01:35:59.934 +05:30 [INF] Content root path: C:\Users\hitha\WisVest-AI\Sprint 2 backend
+2025-05-25 01:36:06.918 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/ - null null
+2025-05-25 01:36:07.010 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/ - 404 0 null 92.9354ms
+2025-05-25 01:36:07.021 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5251/, Response status code: 404
+2025-05-25 01:36:26.253 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/swagger/index.html - null null
+2025-05-25 01:36:26.319 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/swagger/index.html - 200 null text/html;charset=utf-8 66.1758ms
+2025-05-25 01:36:26.405 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/swagger/v1/swagger.json - null null
+2025-05-25 01:36:26.494 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 89.7614ms
+2025-05-25 01:36:33.525 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/news/financial - null null
+2025-05-25 01:36:33.529 +05:30 [INF] Executing endpoint 'WisVestAPI.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 01:36:33.567 +05:30 [INF] Route matched with {action = "GetFinancialNews", controller = "News"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFinancialNews() on controller WisVestAPI.Controllers.NewsController (WisVest).
+2025-05-25 01:36:33.586 +05:30 [INF] Start processing HTTP request GET https://newsapi.org/v2/everything?q=tesla&from=2025-04-24&sortBy=publishedAt&apiKey=f9895a7322a945c1928c30b346eda917
+2025-05-25 01:36:33.597 +05:30 [INF] Sending HTTP request GET https://newsapi.org/v2/everything?q=tesla&from=2025-04-24&sortBy=publishedAt&apiKey=f9895a7322a945c1928c30b346eda917
+2025-05-25 01:36:34.303 +05:30 [INF] Received HTTP response headers after 703.2227ms - 400
+2025-05-25 01:36:34.307 +05:30 [INF] End processing HTTP request after 722.624ms - 400
+2025-05-25 01:36:34.316 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2025-05-25 01:36:34.323 +05:30 [INF] Executed action WisVestAPI.Controllers.NewsController.GetFinancialNews (WisVest) in 745.2826ms
+2025-05-25 01:36:34.327 +05:30 [INF] Executed endpoint 'WisVestAPI.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 01:36:34.330 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/news/financial - 400 null text/plain; charset=utf-8 805.3456ms
+2025-05-25 01:37:30.365 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/swagger/index.html - null null
+2025-05-25 01:37:30.376 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/swagger/index.html - 200 null text/html;charset=utf-8 11.404ms
+2025-05-25 01:37:30.425 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/swagger/v1/swagger.json - null null
+2025-05-25 01:37:30.435 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 9.8837ms
+2025-05-25 01:37:46.498 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/news/financial - null null
+2025-05-25 01:37:46.509 +05:30 [INF] Executing endpoint 'WisVestAPI.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 01:37:46.513 +05:30 [INF] Route matched with {action = "GetFinancialNews", controller = "News"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFinancialNews() on controller WisVestAPI.Controllers.NewsController (WisVest).
+2025-05-25 01:37:46.515 +05:30 [INF] Start processing HTTP request GET https://newsapi.org/v2/everything?q=tesla&from=2025-04-24&sortBy=publishedAt&apiKey=f9895a7322a945c1928c30b346eda917
+2025-05-25 01:37:46.516 +05:30 [INF] Sending HTTP request GET https://newsapi.org/v2/everything?q=tesla&from=2025-04-24&sortBy=publishedAt&apiKey=f9895a7322a945c1928c30b346eda917
+2025-05-25 01:37:46.855 +05:30 [INF] Received HTTP response headers after 335.5477ms - 400
+2025-05-25 01:37:46.858 +05:30 [INF] End processing HTTP request after 343.1137ms - 400
+2025-05-25 01:37:46.859 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2025-05-25 01:37:46.861 +05:30 [INF] Executed action WisVestAPI.Controllers.NewsController.GetFinancialNews (WisVest) in 346.2111ms
+2025-05-25 01:37:46.862 +05:30 [INF] Executed endpoint 'WisVestAPI.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 01:37:46.863 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/news/financial - 400 null text/plain; charset=utf-8 365.2714ms
+2025-05-25 01:46:06.097 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/postman - null null
+2025-05-25 01:46:06.120 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/postman - 404 0 null 22.4249ms
+2025-05-25 01:46:06.129 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5251/postman, Response status code: 404
+2025-05-25 01:52:42.917 +05:30 [INF] Application is shutting down...
+2025-05-25 01:52:50.025 +05:30 [INF] User profile is available. Using 'C:\Users\hitha\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-25 01:52:50.111 +05:30 [INF] Now listening on: http://localhost:5251
+2025-05-25 01:52:50.115 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-25 01:52:50.116 +05:30 [INF] Hosting environment: Development
+2025-05-25 01:52:50.117 +05:30 [INF] Content root path: C:\Users\hitha\WisVest-AI\Sprint 2 backend
+2025-05-25 01:52:52.517 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/ - null null
+2025-05-25 01:52:52.673 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/ - 404 0 null 159.267ms
+2025-05-25 01:52:52.687 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5251/, Response status code: 404
+2025-05-25 01:53:06.800 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/swagger/index.html - null null
+2025-05-25 01:53:06.946 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/swagger/index.html - 200 null text/html;charset=utf-8 146.67ms
+2025-05-25 01:53:07.047 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/swagger/v1/swagger.json - null null
+2025-05-25 01:53:07.166 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 119.119ms
+2025-05-25 01:53:17.641 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/news/financial - null null
+2025-05-25 01:53:17.649 +05:30 [INF] Executing endpoint 'WisVestAPI.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 01:53:17.687 +05:30 [INF] Route matched with {action = "GetFinancialNews", controller = "News"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFinancialNews() on controller WisVestAPI.Controllers.NewsController (WisVest).
+2025-05-25 01:53:17.709 +05:30 [INF] Start processing HTTP request GET https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=f9895a7322a945c1928c30b346eda917
+2025-05-25 01:53:17.715 +05:30 [INF] Sending HTTP request GET https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=f9895a7322a945c1928c30b346eda917
+2025-05-25 01:53:18.546 +05:30 [INF] Received HTTP response headers after 824.467ms - 400
+2025-05-25 01:53:18.551 +05:30 [INF] End processing HTTP request after 847.2032ms - 400
+2025-05-25 01:53:18.565 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2025-05-25 01:53:18.575 +05:30 [INF] Executed action WisVestAPI.Controllers.NewsController.GetFinancialNews (WisVest) in 877.2415ms
+2025-05-25 01:53:18.578 +05:30 [INF] Executed endpoint 'WisVestAPI.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 01:53:18.581 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/news/financial - 400 null text/plain; charset=utf-8 940.1992ms
+2025-05-25 02:00:35.933 +05:30 [INF] Application is shutting down...
+2025-05-25 02:00:40.795 +05:30 [INF] User profile is available. Using 'C:\Users\hitha\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-25 02:00:40.907 +05:30 [INF] Now listening on: http://localhost:5251
+2025-05-25 02:00:40.910 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-25 02:00:40.912 +05:30 [INF] Hosting environment: Development
+2025-05-25 02:00:40.914 +05:30 [INF] Content root path: C:\Users\hitha\WisVest-AI\Sprint 2 backend
+2025-05-25 02:00:46.339 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/ - null null
+2025-05-25 02:00:46.482 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/ - 404 0 null 146.7582ms
+2025-05-25 02:00:46.509 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5251/, Response status code: 404
+2025-05-25 02:00:54.232 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/swagger/index.html - null null
+2025-05-25 02:00:54.291 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/swagger/index.html - 200 null text/html;charset=utf-8 59.2935ms
+2025-05-25 02:00:54.379 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/swagger/v1/swagger.json - null null
+2025-05-25 02:00:54.449 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 69.9208ms
+2025-05-25 02:01:00.284 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/news/financial - null null
+2025-05-25 02:01:00.291 +05:30 [INF] Executing endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 02:01:00.311 +05:30 [INF] Route matched with {action = "GetFinancialNews", controller = "News"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFinancialNews() on controller YourNamespace.Controllers.NewsController (WisVest).
+2025-05-25 02:01:00.323 +05:30 [INF] Start processing HTTP request GET https://newsapi.org/v2/top-headlines?category=business&language=en
+2025-05-25 02:01:00.327 +05:30 [INF] Sending HTTP request GET https://newsapi.org/v2/top-headlines?category=business&language=en
+2025-05-25 02:01:01.681 +05:30 [INF] Received HTTP response headers after 1351.4161ms - 400
+2025-05-25 02:01:01.684 +05:30 [INF] End processing HTTP request after 1364.3595ms - 400
+2025-05-25 02:01:01.691 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2025-05-25 02:01:01.695 +05:30 [INF] Executed action YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest) in 1379.9363ms
+2025-05-25 02:01:01.697 +05:30 [INF] Executed endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 02:01:01.698 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/news/financial - 400 null text/plain; charset=utf-8 1414.2324ms
+2025-05-25 02:02:07.754 +05:30 [INF] Application is shutting down...
+2025-05-25 02:02:11.523 +05:30 [INF] User profile is available. Using 'C:\Users\hitha\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-25 02:02:11.615 +05:30 [INF] Now listening on: http://localhost:5251
+2025-05-25 02:02:11.620 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-25 02:02:11.622 +05:30 [INF] Hosting environment: Development
+2025-05-25 02:02:11.623 +05:30 [INF] Content root path: C:\Users\hitha\WisVest-AI\Sprint 2 backend
+2025-05-25 02:02:16.160 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/ - null null
+2025-05-25 02:02:16.241 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/ - 404 0 null 81.6149ms
+2025-05-25 02:02:16.252 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5251/, Response status code: 404
+2025-05-25 02:02:23.328 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/swagger/index.html - null null
+2025-05-25 02:02:23.443 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/swagger/index.html - 200 null text/html;charset=utf-8 115.4025ms
+2025-05-25 02:02:23.539 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/swagger/v1/swagger.json - null null
+2025-05-25 02:02:23.644 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 105.345ms
+2025-05-25 02:02:28.947 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/news/financial - null null
+2025-05-25 02:02:28.955 +05:30 [INF] Executing endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 02:02:28.975 +05:30 [INF] Route matched with {action = "GetFinancialNews", controller = "News"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFinancialNews() on controller YourNamespace.Controllers.NewsController (WisVest).
+2025-05-25 02:02:28.994 +05:30 [INF] Start processing HTTP request GET https://newsapi.org/v2/top-headlines?category=business&language=en
+2025-05-25 02:02:28.999 +05:30 [INF] Sending HTTP request GET https://newsapi.org/v2/top-headlines?category=business&language=en
+2025-05-25 02:02:29.828 +05:30 [INF] Received HTTP response headers after 823.2325ms - 200
+2025-05-25 02:02:29.831 +05:30 [INF] End processing HTTP request after 840.5796ms - 200
+2025-05-25 02:02:29.854 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-05-25 02:02:29.869 +05:30 [INF] Executed action YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest) in 886.5856ms
+2025-05-25 02:02:29.877 +05:30 [INF] Executed endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 02:02:29.882 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/news/financial - 200 null text/plain; charset=utf-8 934.6365ms
+2025-05-25 02:17:05.302 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5251/api/auth/login - null null
+2025-05-25 02:17:05.404 +05:30 [INF] CORS policy execution successful.
+2025-05-25 02:17:05.419 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5251/api/auth/login - 204 null null 122.4879ms
+2025-05-25 02:17:05.431 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5251/api/auth/login - application/json 47
+2025-05-25 02:17:05.607 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '12-05-2025 19:04:32', Current time (UTC): '24-05-2025 20:47:05'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-05-25 02:17:05.650 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '12-05-2025 19:04:32', Current time (UTC): '24-05-2025 20:47:05'.
+2025-05-25 02:17:05.651 +05:30 [INF] CORS policy execution successful.
+2025-05-25 02:17:05.656 +05:30 [INF] Executing endpoint 'WisVestAPI.Controllers.AuthController.Login (WisVest)'
+2025-05-25 02:17:05.703 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(LoginRequest) on controller WisVestAPI.Controllers.AuthController (WisVest).
+2025-05-25 02:17:05.945 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-25 02:17:05.963 +05:30 [INF] Executed action WisVestAPI.Controllers.AuthController.Login (WisVest) in 256.0985ms
+2025-05-25 02:17:05.965 +05:30 [INF] Executed endpoint 'WisVestAPI.Controllers.AuthController.Login (WisVest)'
+2025-05-25 02:17:05.966 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5251/api/auth/login - 200 null application/json; charset=utf-8 535.4146ms
+2025-05-25 02:17:07.424 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/news/financial - null null
+2025-05-25 02:17:07.431 +05:30 [INF] CORS policy execution successful.
+2025-05-25 02:17:07.433 +05:30 [INF] Executing endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 02:17:07.435 +05:30 [INF] Route matched with {action = "GetFinancialNews", controller = "News"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFinancialNews() on controller YourNamespace.Controllers.NewsController (WisVest).
+2025-05-25 02:17:07.452 +05:30 [INF] Start processing HTTP request GET https://newsapi.org/v2/top-headlines?category=business&language=en
+2025-05-25 02:17:07.454 +05:30 [INF] Sending HTTP request GET https://newsapi.org/v2/top-headlines?category=business&language=en
+2025-05-25 02:17:09.236 +05:30 [INF] Received HTTP response headers after 1779.3616ms - 200
+2025-05-25 02:17:09.242 +05:30 [INF] End processing HTTP request after 1789.8509ms - 200
+2025-05-25 02:17:09.249 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-05-25 02:17:09.253 +05:30 [INF] Executed action YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest) in 1813.1774ms
+2025-05-25 02:17:09.257 +05:30 [INF] Executed endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 02:17:09.263 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/news/financial - 200 null text/plain; charset=utf-8 1838.8752ms
+2025-05-25 02:22:19.210 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/news/financial - null null
+2025-05-25 02:22:19.230 +05:30 [INF] CORS policy execution successful.
+2025-05-25 02:22:19.232 +05:30 [INF] Executing endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 02:22:19.241 +05:30 [INF] Route matched with {action = "GetFinancialNews", controller = "News"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFinancialNews() on controller YourNamespace.Controllers.NewsController (WisVest).
+2025-05-25 02:22:19.249 +05:30 [INF] Start processing HTTP request GET https://newsapi.org/v2/top-headlines?category=business&language=en
+2025-05-25 02:22:19.251 +05:30 [INF] Sending HTTP request GET https://newsapi.org/v2/top-headlines?category=business&language=en
+2025-05-25 02:22:20.119 +05:30 [INF] Received HTTP response headers after 865.7905ms - 200
+2025-05-25 02:22:20.121 +05:30 [INF] End processing HTTP request after 871.887ms - 200
+2025-05-25 02:22:20.128 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-05-25 02:22:20.130 +05:30 [INF] Executed action YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest) in 886.0438ms
+2025-05-25 02:22:20.131 +05:30 [INF] Executed endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 02:22:20.132 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/news/financial - 200 null text/plain; charset=utf-8 923.4819ms
+2025-05-25 02:28:42.457 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/news/financial - null null
+2025-05-25 02:28:42.474 +05:30 [INF] CORS policy execution successful.
+2025-05-25 02:28:42.484 +05:30 [INF] Executing endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 02:28:42.495 +05:30 [INF] Route matched with {action = "GetFinancialNews", controller = "News"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFinancialNews() on controller YourNamespace.Controllers.NewsController (WisVest).
+2025-05-25 02:28:42.508 +05:30 [INF] Start processing HTTP request GET https://newsapi.org/v2/top-headlines?category=business&language=en
+2025-05-25 02:28:42.511 +05:30 [INF] Sending HTTP request GET https://newsapi.org/v2/top-headlines?category=business&language=en
+2025-05-25 02:28:43.280 +05:30 [INF] Received HTTP response headers after 766.5467ms - 200
+2025-05-25 02:28:43.286 +05:30 [INF] End processing HTTP request after 778.2477ms - 200
+2025-05-25 02:28:43.292 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-05-25 02:28:43.295 +05:30 [INF] Executed action YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest) in 797.3646ms
+2025-05-25 02:28:43.297 +05:30 [INF] Executed endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 02:28:43.300 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/news/financial - 200 null text/plain; charset=utf-8 845.9335ms
+2025-05-25 02:34:20.997 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5251/api/auth/login - null null
+2025-05-25 02:34:21.008 +05:30 [INF] CORS policy execution successful.
+2025-05-25 02:34:21.019 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5251/api/auth/login - 204 null null 21.5079ms
+2025-05-25 02:34:21.024 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5251/api/auth/login - application/json 47
+2025-05-25 02:34:21.080 +05:30 [INF] CORS policy execution successful.
+2025-05-25 02:34:21.081 +05:30 [INF] Executing endpoint 'WisVestAPI.Controllers.AuthController.Login (WisVest)'
+2025-05-25 02:34:21.083 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(LoginRequest) on controller WisVestAPI.Controllers.AuthController (WisVest).
+2025-05-25 02:34:21.165 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-25 02:34:21.168 +05:30 [INF] Executed action WisVestAPI.Controllers.AuthController.Login (WisVest) in 83.2618ms
+2025-05-25 02:34:21.169 +05:30 [INF] Executed endpoint 'WisVestAPI.Controllers.AuthController.Login (WisVest)'
+2025-05-25 02:34:21.170 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5251/api/auth/login - 200 null application/json; charset=utf-8 145.1288ms
+2025-05-25 02:34:22.506 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/news/financial - null null
+2025-05-25 02:34:22.515 +05:30 [INF] CORS policy execution successful.
+2025-05-25 02:34:22.517 +05:30 [INF] Executing endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 02:34:22.523 +05:30 [INF] Route matched with {action = "GetFinancialNews", controller = "News"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFinancialNews() on controller YourNamespace.Controllers.NewsController (WisVest).
+2025-05-25 02:34:22.529 +05:30 [INF] Start processing HTTP request GET https://newsapi.org/v2/top-headlines?category=business&language=en
+2025-05-25 02:34:22.533 +05:30 [INF] Sending HTTP request GET https://newsapi.org/v2/top-headlines?category=business&language=en
+2025-05-25 02:34:23.969 +05:30 [INF] Received HTTP response headers after 1433.7875ms - 200
+2025-05-25 02:34:23.971 +05:30 [INF] End processing HTTP request after 1441.8076ms - 200
+2025-05-25 02:34:23.973 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-05-25 02:34:23.974 +05:30 [INF] Executed action YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest) in 1446.0542ms
+2025-05-25 02:34:23.975 +05:30 [INF] Executed endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 02:34:23.976 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/news/financial - 200 null text/plain; charset=utf-8 1469.4711ms
+2025-05-25 02:47:03.351 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/news/financial - null null
+2025-05-25 02:47:03.481 +05:30 [INF] Executing endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 02:47:03.490 +05:30 [INF] Route matched with {action = "GetFinancialNews", controller = "News"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFinancialNews() on controller YourNamespace.Controllers.NewsController (WisVest).
+2025-05-25 02:47:03.507 +05:30 [INF] Start processing HTTP request GET https://newsapi.org/v2/top-headlines?category=business&language=en
+2025-05-25 02:47:03.511 +05:30 [INF] Sending HTTP request GET https://newsapi.org/v2/top-headlines?category=business&language=en
+2025-05-25 02:47:04.980 +05:30 [INF] Received HTTP response headers after 1465.785ms - 200
+2025-05-25 02:47:04.984 +05:30 [INF] End processing HTTP request after 1477.4455ms - 200
+2025-05-25 02:47:05.003 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-05-25 02:47:05.007 +05:30 [INF] Executed action YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest) in 1510.1113ms
+2025-05-25 02:47:05.009 +05:30 [INF] Executed endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 02:47:05.012 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/news/financial - 200 null text/plain; charset=utf-8 1662.0077ms
+2025-05-25 02:47:05.052 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/favicon.ico - null null
+2025-05-25 02:47:05.061 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/favicon.ico - 404 0 null 8.4588ms
+2025-05-25 02:47:05.064 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5251/favicon.ico, Response status code: 404
+2025-05-25 02:47:27.772 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/swagger/v1/swagger.json - null null
+2025-05-25 02:47:27.832 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 59.8344ms
+2025-05-25 02:47:33.624 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/news/financial - null null
+2025-05-25 02:47:33.629 +05:30 [INF] Executing endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 02:47:33.630 +05:30 [INF] Route matched with {action = "GetFinancialNews", controller = "News"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFinancialNews() on controller YourNamespace.Controllers.NewsController (WisVest).
+2025-05-25 02:47:33.635 +05:30 [INF] Start processing HTTP request GET https://newsapi.org/v2/top-headlines?category=business&language=en
+2025-05-25 02:47:33.636 +05:30 [INF] Sending HTTP request GET https://newsapi.org/v2/top-headlines?category=business&language=en
+2025-05-25 02:47:33.952 +05:30 [INF] Received HTTP response headers after 314.6679ms - 200
+2025-05-25 02:47:33.955 +05:30 [INF] End processing HTTP request after 320.6308ms - 200
+2025-05-25 02:47:33.957 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-05-25 02:47:33.958 +05:30 [INF] Executed action YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest) in 325.8124ms
+2025-05-25 02:47:33.959 +05:30 [INF] Executed endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 02:47:33.960 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/news/financial - 200 null text/plain; charset=utf-8 336.3223ms
+2025-05-25 02:47:57.807 +05:30 [INF] Application is shutting down...
+2025-05-25 02:50:11.015 +05:30 [INF] User profile is available. Using 'C:\Users\hitha\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-25 02:50:11.105 +05:30 [INF] Now listening on: http://localhost:5251
+2025-05-25 02:50:11.109 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-25 02:50:11.110 +05:30 [INF] Hosting environment: Development
+2025-05-25 02:50:11.111 +05:30 [INF] Content root path: C:\Users\hitha\WisVest-AI\Sprint 2 backend
+2025-05-25 02:50:30.341 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/news/financial - null null
+2025-05-25 02:50:30.401 +05:30 [INF] CORS policy execution successful.
+2025-05-25 02:50:30.405 +05:30 [INF] Executing endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 02:50:30.428 +05:30 [INF] Route matched with {action = "GetFinancialNews", controller = "News"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFinancialNews() on controller YourNamespace.Controllers.NewsController (WisVest).
+2025-05-25 02:50:30.442 +05:30 [INF] Start processing HTTP request GET https://newsapi.org/v2/top-headlines?q=finance%20OR%20investment&language=en&pageSize=5
+2025-05-25 02:50:30.447 +05:30 [INF] Sending HTTP request GET https://newsapi.org/v2/top-headlines?q=finance%20OR%20investment&language=en&pageSize=5
+2025-05-25 02:50:31.698 +05:30 [INF] Received HTTP response headers after 1247.8247ms - 200
+2025-05-25 02:50:31.703 +05:30 [INF] End processing HTTP request after 1263.5449ms - 200
+2025-05-25 02:50:31.709 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-05-25 02:50:31.719 +05:30 [INF] Executed action YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest) in 1287.9663ms
+2025-05-25 02:50:31.722 +05:30 [INF] Executed endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 02:50:31.726 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/news/financial - 200 null text/plain; charset=utf-8 1388.3325ms
+2025-05-25 02:51:15.707 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/news/financial - null null
+2025-05-25 02:51:15.717 +05:30 [INF] CORS policy execution successful.
+2025-05-25 02:51:15.719 +05:30 [INF] Executing endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 02:51:15.720 +05:30 [INF] Route matched with {action = "GetFinancialNews", controller = "News"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFinancialNews() on controller YourNamespace.Controllers.NewsController (WisVest).
+2025-05-25 02:51:15.724 +05:30 [INF] Start processing HTTP request GET https://newsapi.org/v2/top-headlines?q=finance%20OR%20investment&language=en&pageSize=5
+2025-05-25 02:51:15.726 +05:30 [INF] Sending HTTP request GET https://newsapi.org/v2/top-headlines?q=finance%20OR%20investment&language=en&pageSize=5
+2025-05-25 02:51:16.039 +05:30 [INF] Received HTTP response headers after 311.3816ms - 200
+2025-05-25 02:51:16.042 +05:30 [INF] End processing HTTP request after 318.2243ms - 200
+2025-05-25 02:51:16.044 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-05-25 02:51:16.046 +05:30 [INF] Executed action YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest) in 322.6143ms
+2025-05-25 02:51:16.048 +05:30 [INF] Executed endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 02:51:16.050 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/news/financial - 200 null text/plain; charset=utf-8 343.494ms
+2025-05-25 02:51:21.581 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/news/financial - null null
+2025-05-25 02:51:21.591 +05:30 [INF] CORS policy execution successful.
+2025-05-25 02:51:21.592 +05:30 [INF] Executing endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 02:51:21.595 +05:30 [INF] Route matched with {action = "GetFinancialNews", controller = "News"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFinancialNews() on controller YourNamespace.Controllers.NewsController (WisVest).
+2025-05-25 02:51:21.598 +05:30 [INF] Start processing HTTP request GET https://newsapi.org/v2/top-headlines?q=finance%20OR%20investment&language=en&pageSize=5
+2025-05-25 02:51:21.600 +05:30 [INF] Sending HTTP request GET https://newsapi.org/v2/top-headlines?q=finance%20OR%20investment&language=en&pageSize=5
+2025-05-25 02:51:22.041 +05:30 [INF] Received HTTP response headers after 439.0134ms - 200
+2025-05-25 02:51:22.042 +05:30 [INF] End processing HTTP request after 443.1537ms - 200
+2025-05-25 02:51:22.042 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-05-25 02:51:22.043 +05:30 [INF] Executed action YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest) in 445.0335ms
+2025-05-25 02:51:22.045 +05:30 [INF] Executed endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 02:51:22.046 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/news/financial - 200 null text/plain; charset=utf-8 464.8108ms
+2025-05-25 02:52:24.970 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/news/financial - null null
+2025-05-25 02:52:24.975 +05:30 [INF] CORS policy execution successful.
+2025-05-25 02:52:24.976 +05:30 [INF] Executing endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 02:52:24.978 +05:30 [INF] Route matched with {action = "GetFinancialNews", controller = "News"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFinancialNews() on controller YourNamespace.Controllers.NewsController (WisVest).
+2025-05-25 02:52:24.980 +05:30 [INF] Start processing HTTP request GET https://newsapi.org/v2/top-headlines?q=finance%20OR%20investment&language=en&pageSize=5
+2025-05-25 02:52:24.982 +05:30 [INF] Sending HTTP request GET https://newsapi.org/v2/top-headlines?q=finance%20OR%20investment&language=en&pageSize=5
+2025-05-25 02:52:25.606 +05:30 [INF] Received HTTP response headers after 622.3869ms - 200
+2025-05-25 02:52:25.610 +05:30 [INF] End processing HTTP request after 629.8271ms - 200
+2025-05-25 02:52:25.612 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-05-25 02:52:25.614 +05:30 [INF] Executed action YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest) in 634.4326ms
+2025-05-25 02:52:25.619 +05:30 [INF] Executed endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 02:52:25.621 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/news/financial - 200 null text/plain; charset=utf-8 650.9952ms
+2025-05-25 02:54:22.219 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/news/financial - null null
+2025-05-25 02:54:22.223 +05:30 [INF] Executing endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 02:54:22.226 +05:30 [INF] Route matched with {action = "GetFinancialNews", controller = "News"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFinancialNews() on controller YourNamespace.Controllers.NewsController (WisVest).
+2025-05-25 02:54:22.230 +05:30 [INF] Start processing HTTP request GET https://newsapi.org/v2/top-headlines?q=finance%20OR%20investment&language=en&pageSize=5
+2025-05-25 02:54:22.231 +05:30 [INF] Sending HTTP request GET https://newsapi.org/v2/top-headlines?q=finance%20OR%20investment&language=en&pageSize=5
+2025-05-25 02:54:28.056 +05:30 [INF] Received HTTP response headers after 5823.3115ms - 200
+2025-05-25 02:54:28.058 +05:30 [INF] End processing HTTP request after 5827.8426ms - 200
+2025-05-25 02:54:28.059 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-05-25 02:54:28.060 +05:30 [INF] Executed action YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest) in 5830.9889ms
+2025-05-25 02:54:28.061 +05:30 [INF] Executed endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 02:54:28.062 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/news/financial - 200 null text/plain; charset=utf-8 5843.5122ms
+2025-05-25 02:55:29.702 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/news/financial - null null
+2025-05-25 02:55:29.711 +05:30 [INF] CORS policy execution successful.
+2025-05-25 02:55:29.714 +05:30 [INF] Executing endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 02:55:29.717 +05:30 [INF] Route matched with {action = "GetFinancialNews", controller = "News"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFinancialNews() on controller YourNamespace.Controllers.NewsController (WisVest).
+2025-05-25 02:55:29.723 +05:30 [INF] Start processing HTTP request GET https://newsapi.org/v2/top-headlines?q=finance%20OR%20investment&language=en&pageSize=5
+2025-05-25 02:55:29.725 +05:30 [INF] Sending HTTP request GET https://newsapi.org/v2/top-headlines?q=finance%20OR%20investment&language=en&pageSize=5
+2025-05-25 02:55:30.045 +05:30 [INF] Received HTTP response headers after 318.1334ms - 200
+2025-05-25 02:55:30.046 +05:30 [INF] End processing HTTP request after 323.5157ms - 200
+2025-05-25 02:55:30.048 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-05-25 02:55:30.048 +05:30 [INF] Executed action YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest) in 326.3675ms
+2025-05-25 02:55:30.050 +05:30 [INF] Executed endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 02:55:30.051 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/news/financial - 200 null text/plain; charset=utf-8 348.7881ms
+2025-05-25 02:56:46.300 +05:30 [INF] Application is shutting down...
+2025-05-25 02:57:17.387 +05:30 [INF] User profile is available. Using 'C:\Users\hitha\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-25 02:57:17.489 +05:30 [INF] Now listening on: http://localhost:5251
+2025-05-25 02:57:17.494 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-25 02:57:17.496 +05:30 [INF] Hosting environment: Development
+2025-05-25 02:57:17.497 +05:30 [INF] Content root path: C:\Users\hitha\WisVest-AI\Sprint 2 backend
+2025-05-25 02:57:19.798 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/ - null null
+2025-05-25 02:57:19.985 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/ - 404 0 null 191.6333ms
+2025-05-25 02:57:20.001 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5251/, Response status code: 404
+2025-05-25 02:57:25.957 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/swagger/index.html - null null
+2025-05-25 02:57:26.063 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/swagger/index.html - 200 null text/html;charset=utf-8 107.1321ms
+2025-05-25 02:57:26.146 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/swagger/v1/swagger.json - null null
+2025-05-25 02:57:26.267 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 121.0238ms
+2025-05-25 02:57:34.890 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/news/financial - null null
+2025-05-25 02:57:34.896 +05:30 [INF] Executing endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 02:57:34.935 +05:30 [INF] Route matched with {action = "GetFinancialNews", controller = "News"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFinancialNews() on controller YourNamespace.Controllers.NewsController (WisVest).
+2025-05-25 02:57:34.964 +05:30 [INF] Start processing HTTP request GET https://newsapi.org/v2/top-headlines?category=business&language=en
+2025-05-25 02:57:34.973 +05:30 [INF] Sending HTTP request GET https://newsapi.org/v2/top-headlines?category=business&language=en
+2025-05-25 02:57:36.464 +05:30 [INF] Received HTTP response headers after 1485.2736ms - 200
+2025-05-25 02:57:36.468 +05:30 [INF] End processing HTTP request after 1507.5776ms - 200
+2025-05-25 02:57:36.481 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-05-25 02:57:36.491 +05:30 [INF] Executed action YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest) in 1543.7841ms
+2025-05-25 02:57:36.495 +05:30 [INF] Executed endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 02:57:36.500 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/news/financial - 200 null text/plain; charset=utf-8 1610.1559ms
+2025-05-25 02:58:11.995 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5251/api/auth/login - null null
+2025-05-25 02:58:12.004 +05:30 [INF] CORS policy execution successful.
+2025-05-25 02:58:12.011 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5251/api/auth/login - 204 null null 15.71ms
+2025-05-25 02:58:12.021 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5251/api/auth/login - application/json 47
+2025-05-25 02:58:12.115 +05:30 [INF] CORS policy execution successful.
+2025-05-25 02:58:12.118 +05:30 [INF] Executing endpoint 'WisVestAPI.Controllers.AuthController.Login (WisVest)'
+2025-05-25 02:58:12.128 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(LoginRequest) on controller WisVestAPI.Controllers.AuthController (WisVest).
+2025-05-25 02:58:12.286 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-25 02:58:12.299 +05:30 [INF] Executed action WisVestAPI.Controllers.AuthController.Login (WisVest) in 166.9894ms
+2025-05-25 02:58:12.301 +05:30 [INF] Executed endpoint 'WisVestAPI.Controllers.AuthController.Login (WisVest)'
+2025-05-25 02:58:12.301 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5251/api/auth/login - 200 null application/json; charset=utf-8 280.6798ms
+2025-05-25 02:58:13.485 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/news/financial - null null
+2025-05-25 02:58:13.493 +05:30 [INF] CORS policy execution successful.
+2025-05-25 02:58:13.495 +05:30 [INF] Executing endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 02:58:13.499 +05:30 [INF] Route matched with {action = "GetFinancialNews", controller = "News"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFinancialNews() on controller YourNamespace.Controllers.NewsController (WisVest).
+2025-05-25 02:58:13.507 +05:30 [INF] Start processing HTTP request GET https://newsapi.org/v2/top-headlines?category=business&language=en
+2025-05-25 02:58:13.511 +05:30 [INF] Sending HTTP request GET https://newsapi.org/v2/top-headlines?category=business&language=en
+2025-05-25 02:58:13.848 +05:30 [INF] Received HTTP response headers after 333.3999ms - 200
+2025-05-25 02:58:13.849 +05:30 [INF] End processing HTTP request after 342.2121ms - 200
+2025-05-25 02:58:13.853 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-05-25 02:58:13.855 +05:30 [INF] Executed action YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest) in 348.7801ms
+2025-05-25 02:58:13.857 +05:30 [INF] Executed endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 02:58:13.858 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/news/financial - 200 null text/plain; charset=utf-8 373.2765ms
+2025-05-25 03:06:13.075 +05:30 [INF] Application is shutting down...
+2025-05-25 03:06:20.412 +05:30 [INF] User profile is available. Using 'C:\Users\hitha\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-25 03:06:20.541 +05:30 [INF] Now listening on: http://localhost:5251
+2025-05-25 03:06:20.546 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-25 03:06:20.547 +05:30 [INF] Hosting environment: Development
+2025-05-25 03:06:20.548 +05:30 [INF] Content root path: C:\Users\hitha\WisVest-AI\Sprint 2 backend
+2025-05-25 03:06:31.479 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/ - null null
+2025-05-25 03:06:31.539 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/ - 404 0 null 60.7597ms
+2025-05-25 03:06:31.554 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5251/, Response status code: 404
+2025-05-25 03:06:42.735 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/swagger/index.html - null null
+2025-05-25 03:06:42.849 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/swagger/index.html - 200 null text/html;charset=utf-8 114.7945ms
+2025-05-25 03:06:42.968 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/swagger/v1/swagger.json - null null
+2025-05-25 03:06:43.076 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 107.8719ms
+2025-05-25 03:06:47.735 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/news/financial - null null
+2025-05-25 03:06:47.746 +05:30 [INF] Executing endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 03:06:47.790 +05:30 [INF] Route matched with {action = "GetFinancialNews", controller = "News"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFinancialNews() on controller YourNamespace.Controllers.NewsController (WisVest).
+2025-05-25 03:06:47.815 +05:30 [INF] Start processing HTTP request GET https://finnhub.io/api/v1/news?category=general&token=d0p3m39r01qr8ds1ajt0d0p3m39r01qr8ds1ajtg
+2025-05-25 03:06:47.822 +05:30 [INF] Sending HTTP request GET https://finnhub.io/api/v1/news?category=general&token=d0p3m39r01qr8ds1ajt0d0p3m39r01qr8ds1ajtg
+2025-05-25 03:06:49.080 +05:30 [INF] Received HTTP response headers after 1252.4958ms - 200
+2025-05-25 03:06:49.083 +05:30 [INF] End processing HTTP request after 1273.335ms - 200
+2025-05-25 03:06:49.096 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-05-25 03:06:49.101 +05:30 [INF] Executed action YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest) in 1304.8791ms
+2025-05-25 03:06:49.104 +05:30 [INF] Executed endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 03:06:49.109 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/news/financial - 200 null text/plain; charset=utf-8 1373.4739ms
+2025-05-25 03:07:14.135 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/news/financial - null null
+2025-05-25 03:07:14.151 +05:30 [INF] CORS policy execution successful.
+2025-05-25 03:07:14.156 +05:30 [INF] Executing endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 03:07:14.159 +05:30 [INF] Route matched with {action = "GetFinancialNews", controller = "News"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFinancialNews() on controller YourNamespace.Controllers.NewsController (WisVest).
+2025-05-25 03:07:14.162 +05:30 [INF] Start processing HTTP request GET https://finnhub.io/api/v1/news?category=general&token=d0p3m39r01qr8ds1ajt0d0p3m39r01qr8ds1ajtg
+2025-05-25 03:07:14.165 +05:30 [INF] Sending HTTP request GET https://finnhub.io/api/v1/news?category=general&token=d0p3m39r01qr8ds1ajt0d0p3m39r01qr8ds1ajtg
+2025-05-25 03:07:14.487 +05:30 [INF] Received HTTP response headers after 321.2087ms - 200
+2025-05-25 03:07:14.492 +05:30 [INF] End processing HTTP request after 329.8551ms - 200
+2025-05-25 03:07:14.523 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-05-25 03:07:14.532 +05:30 [INF] Executed action YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest) in 369.8823ms
+2025-05-25 03:07:14.534 +05:30 [INF] Executed endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 03:07:14.535 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/news/financial - 200 null text/plain; charset=utf-8 399.5903ms
+2025-05-25 03:11:17.068 +05:30 [INF] Application is shutting down...
+2025-05-25 03:11:21.988 +05:30 [INF] User profile is available. Using 'C:\Users\hitha\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-25 03:11:22.074 +05:30 [INF] Now listening on: http://localhost:5251
+2025-05-25 03:11:22.078 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-25 03:11:22.079 +05:30 [INF] Hosting environment: Development
+2025-05-25 03:11:22.080 +05:30 [INF] Content root path: C:\Users\hitha\WisVest-AI\Sprint 2 backend
+2025-05-25 03:11:26.936 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/ - null null
+2025-05-25 03:11:27.101 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/ - 404 0 null 168.6966ms
+2025-05-25 03:11:27.115 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5251/, Response status code: 404
+2025-05-25 03:11:35.025 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/swagger/index.html - null null
+2025-05-25 03:11:35.082 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/swagger/index.html - 200 null text/html;charset=utf-8 58.0328ms
+2025-05-25 03:11:35.163 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/swagger/v1/swagger.json - null null
+2025-05-25 03:11:35.230 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 67.2727ms
+2025-05-25 03:12:03.253 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/news/financial - null null
+2025-05-25 03:12:03.260 +05:30 [INF] Executing endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 03:12:03.288 +05:30 [INF] Route matched with {action = "GetFinancialNews", controller = "News"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFinancialNews() on controller YourNamespace.Controllers.NewsController (WisVest).
+2025-05-25 03:12:03.302 +05:30 [INF] Start processing HTTP request GET https://finnhub.io/api/v1/news?category=general&token=d0p3m39r01qr8ds1ajt0d0p3m39r01qr8ds1ajtg
+2025-05-25 03:12:03.308 +05:30 [INF] Sending HTTP request GET https://finnhub.io/api/v1/news?category=general&token=d0p3m39r01qr8ds1ajt0d0p3m39r01qr8ds1ajtg
+2025-05-25 03:12:04.610 +05:30 [INF] Received HTTP response headers after 1299.1907ms - 200
+2025-05-25 03:12:04.613 +05:30 [INF] End processing HTTP request after 1313.1572ms - 200
+2025-05-25 03:12:04.661 +05:30 [INF] Executing OkObjectResult, writing value of type 'YourNamespace.Controllers.NewsController+Article[]'.
+2025-05-25 03:12:04.674 +05:30 [INF] Executed action YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest) in 1379.8105ms
+2025-05-25 03:12:04.676 +05:30 [INF] Executed endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 03:12:04.678 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/news/financial - 200 null application/json; charset=utf-8 1424.4529ms
+2025-05-25 03:13:44.403 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5251/api/auth/login - null null
+2025-05-25 03:13:44.417 +05:30 [INF] CORS policy execution successful.
+2025-05-25 03:13:44.422 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5251/api/auth/login - 204 null null 19.5353ms
+2025-05-25 03:13:44.428 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5251/api/auth/login - application/json 46
+2025-05-25 03:13:44.520 +05:30 [INF] CORS policy execution successful.
+2025-05-25 03:13:44.523 +05:30 [INF] Executing endpoint 'WisVestAPI.Controllers.AuthController.Login (WisVest)'
+2025-05-25 03:13:44.531 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(LoginRequest) on controller WisVestAPI.Controllers.AuthController (WisVest).
+2025-05-25 03:13:44.654 +05:30 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-25 03:13:44.667 +05:30 [INF] Executed action WisVestAPI.Controllers.AuthController.Login (WisVest) in 132.1897ms
+2025-05-25 03:13:44.670 +05:30 [INF] Executed endpoint 'WisVestAPI.Controllers.AuthController.Login (WisVest)'
+2025-05-25 03:13:44.671 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5251/api/auth/login - 401 null application/json; charset=utf-8 242.5105ms
+2025-05-25 03:13:54.563 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5251/api/auth/login - null null
+2025-05-25 03:13:54.571 +05:30 [INF] CORS policy execution successful.
+2025-05-25 03:13:54.573 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5251/api/auth/login - 204 null null 9.3918ms
+2025-05-25 03:13:54.580 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5251/api/auth/login - application/json 47
+2025-05-25 03:13:54.584 +05:30 [INF] CORS policy execution successful.
+2025-05-25 03:13:54.585 +05:30 [INF] Executing endpoint 'WisVestAPI.Controllers.AuthController.Login (WisVest)'
+2025-05-25 03:13:54.586 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(LoginRequest) on controller WisVestAPI.Controllers.AuthController (WisVest).
+2025-05-25 03:13:54.681 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-25 03:13:54.685 +05:30 [INF] Executed action WisVestAPI.Controllers.AuthController.Login (WisVest) in 94.8774ms
+2025-05-25 03:13:54.686 +05:30 [INF] Executed endpoint 'WisVestAPI.Controllers.AuthController.Login (WisVest)'
+2025-05-25 03:13:54.687 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5251/api/auth/login - 200 null application/json; charset=utf-8 107.7829ms
+2025-05-25 03:13:55.708 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/news/financial - null null
+2025-05-25 03:13:55.712 +05:30 [INF] CORS policy execution successful.
+2025-05-25 03:13:55.713 +05:30 [INF] Executing endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 03:13:55.716 +05:30 [INF] Route matched with {action = "GetFinancialNews", controller = "News"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFinancialNews() on controller YourNamespace.Controllers.NewsController (WisVest).
+2025-05-25 03:13:55.720 +05:30 [INF] Start processing HTTP request GET https://finnhub.io/api/v1/news?category=general&token=d0p3m39r01qr8ds1ajt0d0p3m39r01qr8ds1ajtg
+2025-05-25 03:13:55.724 +05:30 [INF] Sending HTTP request GET https://finnhub.io/api/v1/news?category=general&token=d0p3m39r01qr8ds1ajt0d0p3m39r01qr8ds1ajtg
+2025-05-25 03:13:56.482 +05:30 [INF] Received HTTP response headers after 754.8721ms - 200
+2025-05-25 03:13:56.491 +05:30 [INF] End processing HTTP request after 770.3859ms - 200
+2025-05-25 03:13:56.561 +05:30 [INF] Executing OkObjectResult, writing value of type 'YourNamespace.Controllers.NewsController+Article[]'.
+2025-05-25 03:13:56.564 +05:30 [INF] Executed action YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest) in 843.6138ms
+2025-05-25 03:13:56.565 +05:30 [INF] Executed endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 03:13:56.567 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/news/financial - 200 null application/json; charset=utf-8 859.0444ms
+2025-05-25 03:18:02.864 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/news/financial - null null
+2025-05-25 03:18:02.869 +05:30 [INF] CORS policy execution successful.
+2025-05-25 03:18:02.871 +05:30 [INF] Executing endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 03:18:02.873 +05:30 [INF] Route matched with {action = "GetFinancialNews", controller = "News"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFinancialNews() on controller YourNamespace.Controllers.NewsController (WisVest).
+2025-05-25 03:18:02.877 +05:30 [INF] Start processing HTTP request GET https://finnhub.io/api/v1/news?category=general&token=d0p3m39r01qr8ds1ajt0d0p3m39r01qr8ds1ajtg
+2025-05-25 03:18:02.879 +05:30 [INF] Sending HTTP request GET https://finnhub.io/api/v1/news?category=general&token=d0p3m39r01qr8ds1ajt0d0p3m39r01qr8ds1ajtg
+2025-05-25 03:18:03.684 +05:30 [INF] Received HTTP response headers after 803.5352ms - 200
+2025-05-25 03:18:03.688 +05:30 [INF] End processing HTTP request after 810.1932ms - 200
+2025-05-25 03:18:03.698 +05:30 [INF] Executing OkObjectResult, writing value of type 'YourNamespace.Controllers.NewsController+Article[]'.
+2025-05-25 03:18:03.702 +05:30 [INF] Executed action YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest) in 826.2633ms
+2025-05-25 03:18:03.705 +05:30 [INF] Executed endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 03:18:03.707 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/news/financial - 200 null application/json; charset=utf-8 842.6518ms
+2025-05-25 03:18:09.982 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/news/financial - null null
+2025-05-25 03:18:09.985 +05:30 [INF] CORS policy execution successful.
+2025-05-25 03:18:09.987 +05:30 [INF] Executing endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 03:18:09.989 +05:30 [INF] Route matched with {action = "GetFinancialNews", controller = "News"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFinancialNews() on controller YourNamespace.Controllers.NewsController (WisVest).
+2025-05-25 03:18:09.992 +05:30 [INF] Start processing HTTP request GET https://finnhub.io/api/v1/news?category=general&token=d0p3m39r01qr8ds1ajt0d0p3m39r01qr8ds1ajtg
+2025-05-25 03:18:09.996 +05:30 [INF] Sending HTTP request GET https://finnhub.io/api/v1/news?category=general&token=d0p3m39r01qr8ds1ajt0d0p3m39r01qr8ds1ajtg
+2025-05-25 03:18:10.342 +05:30 [INF] Received HTTP response headers after 340.2477ms - 200
+2025-05-25 03:18:10.349 +05:30 [INF] End processing HTTP request after 357.0685ms - 200
+2025-05-25 03:18:10.366 +05:30 [INF] Executing OkObjectResult, writing value of type 'YourNamespace.Controllers.NewsController+Article[]'.
+2025-05-25 03:18:10.368 +05:30 [INF] Executed action YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest) in 376.9301ms
+2025-05-25 03:18:10.369 +05:30 [INF] Executed endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 03:18:10.370 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/news/financial - 200 null application/json; charset=utf-8 388.9204ms
+2025-05-25 03:19:31.286 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/news/financial - null null
+2025-05-25 03:19:31.293 +05:30 [INF] CORS policy execution successful.
+2025-05-25 03:19:31.295 +05:30 [INF] Executing endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 03:19:31.298 +05:30 [INF] Route matched with {action = "GetFinancialNews", controller = "News"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFinancialNews() on controller YourNamespace.Controllers.NewsController (WisVest).
+2025-05-25 03:19:31.301 +05:30 [INF] Start processing HTTP request GET https://finnhub.io/api/v1/news?category=general&token=d0p3m39r01qr8ds1ajt0d0p3m39r01qr8ds1ajtg
+2025-05-25 03:19:31.302 +05:30 [INF] Sending HTTP request GET https://finnhub.io/api/v1/news?category=general&token=d0p3m39r01qr8ds1ajt0d0p3m39r01qr8ds1ajtg
+2025-05-25 03:19:32.070 +05:30 [INF] Received HTTP response headers after 766.0642ms - 200
+2025-05-25 03:19:32.073 +05:30 [INF] End processing HTTP request after 772.2631ms - 200
+2025-05-25 03:19:32.091 +05:30 [INF] Executing OkObjectResult, writing value of type 'YourNamespace.Controllers.NewsController+Article[]'.
+2025-05-25 03:19:32.094 +05:30 [INF] Executed action YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest) in 793.4276ms
+2025-05-25 03:19:32.096 +05:30 [INF] Executed endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 03:19:32.097 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/news/financial - 200 null application/json; charset=utf-8 810.9881ms
+2025-05-25 03:19:59.317 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/news/financial - null null
+2025-05-25 03:19:59.327 +05:30 [INF] CORS policy execution successful.
+2025-05-25 03:19:59.328 +05:30 [INF] Executing endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 03:19:59.330 +05:30 [INF] Route matched with {action = "GetFinancialNews", controller = "News"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFinancialNews() on controller YourNamespace.Controllers.NewsController (WisVest).
+2025-05-25 03:19:59.334 +05:30 [INF] Start processing HTTP request GET https://finnhub.io/api/v1/news?category=general&token=d0p3m39r01qr8ds1ajt0d0p3m39r01qr8ds1ajtg
+2025-05-25 03:19:59.336 +05:30 [INF] Sending HTTP request GET https://finnhub.io/api/v1/news?category=general&token=d0p3m39r01qr8ds1ajt0d0p3m39r01qr8ds1ajtg
+2025-05-25 03:19:59.651 +05:30 [INF] Received HTTP response headers after 312.9837ms - 200
+2025-05-25 03:19:59.653 +05:30 [INF] End processing HTTP request after 319.2844ms - 200
+2025-05-25 03:19:59.680 +05:30 [INF] Executing OkObjectResult, writing value of type 'YourNamespace.Controllers.NewsController+Article[]'.
+2025-05-25 03:19:59.681 +05:30 [INF] Executed action YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest) in 347.8736ms
+2025-05-25 03:19:59.682 +05:30 [INF] Executed endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 03:19:59.683 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/news/financial - 200 null application/json; charset=utf-8 365.7044ms
+2025-05-25 03:20:02.240 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/news/financial - null null
+2025-05-25 03:20:02.244 +05:30 [INF] CORS policy execution successful.
+2025-05-25 03:20:02.245 +05:30 [INF] Executing endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 03:20:02.246 +05:30 [INF] Route matched with {action = "GetFinancialNews", controller = "News"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFinancialNews() on controller YourNamespace.Controllers.NewsController (WisVest).
+2025-05-25 03:20:02.250 +05:30 [INF] Start processing HTTP request GET https://finnhub.io/api/v1/news?category=general&token=d0p3m39r01qr8ds1ajt0d0p3m39r01qr8ds1ajtg
+2025-05-25 03:20:02.253 +05:30 [INF] Sending HTTP request GET https://finnhub.io/api/v1/news?category=general&token=d0p3m39r01qr8ds1ajt0d0p3m39r01qr8ds1ajtg
+2025-05-25 03:20:02.550 +05:30 [INF] Received HTTP response headers after 293.7351ms - 200
+2025-05-25 03:20:02.557 +05:30 [INF] End processing HTTP request after 306.4673ms - 200
+2025-05-25 03:20:02.565 +05:30 [INF] Executing OkObjectResult, writing value of type 'YourNamespace.Controllers.NewsController+Article[]'.
+2025-05-25 03:20:02.573 +05:30 [INF] Executed action YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest) in 323.3456ms
+2025-05-25 03:20:02.580 +05:30 [INF] Executed endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 03:20:02.583 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/news/financial - 200 null application/json; charset=utf-8 342.8508ms
+2025-05-25 03:22:32.529 +05:30 [INF] Application is shutting down...
+2025-05-25 23:11:58.586 +05:30 [INF] User profile is available. Using 'C:\Users\hitha\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-25 23:11:58.751 +05:30 [INF] Now listening on: http://localhost:5251
+2025-05-25 23:11:58.756 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-25 23:11:58.758 +05:30 [INF] Hosting environment: Development
+2025-05-25 23:11:58.760 +05:30 [INF] Content root path: C:\Users\hitha\WisVest-AI\Sprint 2 backend
+2025-05-25 23:12:31.213 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5251/api/auth/login - null null
+2025-05-25 23:12:31.407 +05:30 [INF] CORS policy execution successful.
+2025-05-25 23:12:31.432 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5251/api/auth/login - 204 null null 223.2917ms
+2025-05-25 23:12:31.469 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5251/api/auth/login - application/json 47
+2025-05-25 23:12:31.681 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '24-05-2025 22:43:54', Current time (UTC): '25-05-2025 17:42:31'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-05-25 23:12:31.734 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '24-05-2025 22:43:54', Current time (UTC): '25-05-2025 17:42:31'.
+2025-05-25 23:12:31.741 +05:30 [INF] CORS policy execution successful.
+2025-05-25 23:12:31.762 +05:30 [INF] Executing endpoint 'WisVestAPI.Controllers.AuthController.Login (WisVest)'
+2025-05-25 23:12:31.830 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(LoginRequest) on controller WisVestAPI.Controllers.AuthController (WisVest).
+2025-05-25 23:12:32.339 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-25 23:12:32.432 +05:30 [INF] Executed action WisVestAPI.Controllers.AuthController.Login (WisVest) in 587.3424ms
+2025-05-25 23:12:32.438 +05:30 [INF] Executed endpoint 'WisVestAPI.Controllers.AuthController.Login (WisVest)'
+2025-05-25 23:12:32.447 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5251/api/auth/login - 200 null application/json; charset=utf-8 977.7983ms
+2025-05-25 23:12:32.932 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/news/financial - null null
+2025-05-25 23:12:32.963 +05:30 [INF] CORS policy execution successful.
+2025-05-25 23:12:32.965 +05:30 [INF] Executing endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 23:12:32.988 +05:30 [INF] Route matched with {action = "GetFinancialNews", controller = "News"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFinancialNews() on controller YourNamespace.Controllers.NewsController (WisVest).
+2025-05-25 23:12:33.019 +05:30 [INF] Start processing HTTP request GET https://finnhub.io/api/v1/news?category=general&token=d0p3m39r01qr8ds1ajt0d0p3m39r01qr8ds1ajtg
+2025-05-25 23:12:33.033 +05:30 [INF] Sending HTTP request GET https://finnhub.io/api/v1/news?category=general&token=d0p3m39r01qr8ds1ajt0d0p3m39r01qr8ds1ajtg
+2025-05-25 23:12:34.182 +05:30 [INF] Received HTTP response headers after 1136.6301ms - 200
+2025-05-25 23:12:34.193 +05:30 [INF] End processing HTTP request after 1179.5705ms - 200
+2025-05-25 23:12:34.280 +05:30 [INF] Executing OkObjectResult, writing value of type 'YourNamespace.Controllers.NewsController+Article[]'.
+2025-05-25 23:12:34.305 +05:30 [INF] Executed action YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest) in 1312.4599ms
+2025-05-25 23:12:34.313 +05:30 [INF] Executed endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 23:12:34.324 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/news/financial - 200 null application/json; charset=utf-8 1391.9078ms
+2025-05-25 23:14:07.074 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/news/financial - null null
+2025-05-25 23:14:07.138 +05:30 [INF] CORS policy execution successful.
+2025-05-25 23:14:07.146 +05:30 [INF] Executing endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 23:14:07.158 +05:30 [INF] Route matched with {action = "GetFinancialNews", controller = "News"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFinancialNews() on controller YourNamespace.Controllers.NewsController (WisVest).
+2025-05-25 23:14:07.172 +05:30 [INF] Start processing HTTP request GET https://finnhub.io/api/v1/news?category=general&token=d0p3m39r01qr8ds1ajt0d0p3m39r01qr8ds1ajtg
+2025-05-25 23:14:07.176 +05:30 [INF] Sending HTTP request GET https://finnhub.io/api/v1/news?category=general&token=d0p3m39r01qr8ds1ajt0d0p3m39r01qr8ds1ajtg
+2025-05-25 23:14:20.671 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/news/financial - null null
+2025-05-25 23:14:20.681 +05:30 [INF] CORS policy execution successful.
+2025-05-25 23:14:20.683 +05:30 [INF] Executing endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 23:14:20.687 +05:30 [INF] Route matched with {action = "GetFinancialNews", controller = "News"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFinancialNews() on controller YourNamespace.Controllers.NewsController (WisVest).
+2025-05-25 23:14:20.695 +05:30 [INF] Start processing HTTP request GET https://finnhub.io/api/v1/news?category=general&token=d0p3m39r01qr8ds1ajt0d0p3m39r01qr8ds1ajtg
+2025-05-25 23:14:20.702 +05:30 [INF] Sending HTTP request GET https://finnhub.io/api/v1/news?category=general&token=d0p3m39r01qr8ds1ajt0d0p3m39r01qr8ds1ajtg
+2025-05-25 23:14:29.683 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/news/financial - null null
+2025-05-25 23:14:29.691 +05:30 [INF] CORS policy execution successful.
+2025-05-25 23:14:29.697 +05:30 [INF] Executing endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 23:14:29.702 +05:30 [INF] Route matched with {action = "GetFinancialNews", controller = "News"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFinancialNews() on controller YourNamespace.Controllers.NewsController (WisVest).
+2025-05-25 23:14:29.711 +05:30 [INF] Start processing HTTP request GET https://finnhub.io/api/v1/news?category=general&token=d0p3m39r01qr8ds1ajt0d0p3m39r01qr8ds1ajtg
+2025-05-25 23:14:29.715 +05:30 [INF] Sending HTTP request GET https://finnhub.io/api/v1/news?category=general&token=d0p3m39r01qr8ds1ajt0d0p3m39r01qr8ds1ajtg
+2025-05-25 23:14:49.127 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5251/api/auth/login - null null
+2025-05-25 23:14:49.135 +05:30 [INF] CORS policy execution successful.
+2025-05-25 23:14:49.151 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5251/api/auth/login - 204 null null 23.3487ms
+2025-05-25 23:14:49.175 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5251/api/auth/login - application/json 47
+2025-05-25 23:14:49.192 +05:30 [INF] CORS policy execution successful.
+2025-05-25 23:14:49.198 +05:30 [INF] Executing endpoint 'WisVestAPI.Controllers.AuthController.Login (WisVest)'
+2025-05-25 23:14:49.214 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(LoginRequest) on controller WisVestAPI.Controllers.AuthController (WisVest).
+2025-05-25 23:14:49.489 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-25 23:14:49.496 +05:30 [INF] Executed action WisVestAPI.Controllers.AuthController.Login (WisVest) in 273.8657ms
+2025-05-25 23:14:49.505 +05:30 [INF] Executed endpoint 'WisVestAPI.Controllers.AuthController.Login (WisVest)'
+2025-05-25 23:14:49.508 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5251/api/auth/login - 200 null application/json; charset=utf-8 333.0375ms
+2025-05-25 23:15:10.544 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/news/financial - null null
+2025-05-25 23:15:10.561 +05:30 [INF] CORS policy execution successful.
+2025-05-25 23:15:10.564 +05:30 [INF] Executing endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 23:15:10.571 +05:30 [INF] Route matched with {action = "GetFinancialNews", controller = "News"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFinancialNews() on controller YourNamespace.Controllers.NewsController (WisVest).
+2025-05-25 23:15:10.594 +05:30 [INF] Start processing HTTP request GET https://finnhub.io/api/v1/news?category=general&token=d0p3m39r01qr8ds1ajt0d0p3m39r01qr8ds1ajtg
+2025-05-25 23:15:10.599 +05:30 [INF] Sending HTTP request GET https://finnhub.io/api/v1/news?category=general&token=d0p3m39r01qr8ds1ajt0d0p3m39r01qr8ds1ajtg
+2025-05-25 23:15:24.307 +05:30 [INF] Received HTTP response headers after 63589.9443ms - 200
+2025-05-25 23:15:24.317 +05:30 [INF] End processing HTTP request after 63617.9417ms - 200
+2025-05-25 23:15:24.343 +05:30 [INF] Executing OkObjectResult, writing value of type 'YourNamespace.Controllers.NewsController+Article[]'.
+2025-05-25 23:15:24.421 +05:30 [INF] Executed action YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest) in 63725.7402ms
+2025-05-25 23:15:24.430 +05:30 [INF] Executed endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 23:15:24.441 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/news/financial - 499 null application/json; charset=utf-8 63769.4843ms
+2025-05-25 23:15:24.614 +05:30 [INF] Received HTTP response headers after 77435.5991ms - 200
+2025-05-25 23:15:24.620 +05:30 [INF] End processing HTTP request after 77449.3188ms - 200
+2025-05-25 23:15:24.652 +05:30 [INF] Executing OkObjectResult, writing value of type 'YourNamespace.Controllers.NewsController+Article[]'.
+2025-05-25 23:15:24.662 +05:30 [INF] Executed action YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest) in 77499.2976ms
+2025-05-25 23:15:24.669 +05:30 [INF] Executed endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 23:15:24.674 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/news/financial - 499 null application/json; charset=utf-8 77606.1826ms
+2025-05-25 23:15:24.929 +05:30 [INF] Received HTTP response headers after 55212.2485ms - 200
+2025-05-25 23:15:24.932 +05:30 [INF] End processing HTTP request after 55221.1343ms - 200
+2025-05-25 23:15:25.185 +05:30 [INF] Executing OkObjectResult, writing value of type 'YourNamespace.Controllers.NewsController+Article[]'.
+2025-05-25 23:15:25.190 +05:30 [INF] Executed action YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest) in 55479.4144ms
+2025-05-25 23:15:25.194 +05:30 [INF] Executed endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 23:15:25.201 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/news/financial - 200 null application/json; charset=utf-8 55518.069ms
+2025-05-25 23:15:26.015 +05:30 [INF] Received HTTP response headers after 15411.5993ms - 200
+2025-05-25 23:15:26.019 +05:30 [INF] End processing HTTP request after 15425.8455ms - 200
+2025-05-25 23:15:26.065 +05:30 [INF] Executing OkObjectResult, writing value of type 'YourNamespace.Controllers.NewsController+Article[]'.
+2025-05-25 23:15:26.070 +05:30 [INF] Executed action YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest) in 15486.9655ms
+2025-05-25 23:15:26.075 +05:30 [INF] Executed endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 23:15:26.079 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/news/financial - 200 null application/json; charset=utf-8 15534.011ms
+2025-05-25 23:15:55.691 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/news/financial - null null
+2025-05-25 23:15:55.702 +05:30 [INF] CORS policy execution successful.
+2025-05-25 23:15:55.706 +05:30 [INF] Executing endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 23:15:55.715 +05:30 [INF] Route matched with {action = "GetFinancialNews", controller = "News"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFinancialNews() on controller YourNamespace.Controllers.NewsController (WisVest).
+2025-05-25 23:15:55.730 +05:30 [INF] Start processing HTTP request GET https://finnhub.io/api/v1/news?category=general&token=d0p3m39r01qr8ds1ajt0d0p3m39r01qr8ds1ajtg
+2025-05-25 23:15:55.739 +05:30 [INF] Sending HTTP request GET https://finnhub.io/api/v1/news?category=general&token=d0p3m39r01qr8ds1ajt0d0p3m39r01qr8ds1ajtg
+2025-05-25 23:15:55.936 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2025-05-25 23:15:55.945 +05:30 [INF] Executed action YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest) in 217.0651ms
+2025-05-25 23:15:55.948 +05:30 [INF] Executed endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 23:15:55.951 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/news/financial - 500 null text/plain; charset=utf-8 259.7638ms
+2025-05-25 23:16:04.705 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/news/financial - null null
+2025-05-25 23:16:04.721 +05:30 [INF] CORS policy execution successful.
+2025-05-25 23:16:04.730 +05:30 [INF] Executing endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 23:16:04.737 +05:30 [INF] Route matched with {action = "GetFinancialNews", controller = "News"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFinancialNews() on controller YourNamespace.Controllers.NewsController (WisVest).
+2025-05-25 23:16:04.751 +05:30 [INF] Start processing HTTP request GET https://finnhub.io/api/v1/news?category=general&token=d0p3m39r01qr8ds1ajt0d0p3m39r01qr8ds1ajtg
+2025-05-25 23:16:04.759 +05:30 [INF] Sending HTTP request GET https://finnhub.io/api/v1/news?category=general&token=d0p3m39r01qr8ds1ajt0d0p3m39r01qr8ds1ajtg
+2025-05-25 23:16:05.718 +05:30 [INF] Received HTTP response headers after 954.3601ms - 200
+2025-05-25 23:16:05.723 +05:30 [INF] End processing HTTP request after 971.886ms - 200
+2025-05-25 23:16:05.729 +05:30 [INF] Executing OkObjectResult, writing value of type 'YourNamespace.Controllers.NewsController+Article[]'.
+2025-05-25 23:16:05.732 +05:30 [INF] Executed action YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest) in 981.4588ms
+2025-05-25 23:16:05.736 +05:30 [INF] Executed endpoint 'YourNamespace.Controllers.NewsController.GetFinancialNews (WisVest)'
+2025-05-25 23:16:05.738 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/news/financial - 200 null application/json; charset=utf-8 1033.6264ms
+2025-05-25 23:16:36.970 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/ - null null
+2025-05-25 23:16:36.992 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/ - 404 0 null 22.3998ms
+2025-05-25 23:16:37.076 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5251/, Response status code: 404
+2025-05-25 23:16:42.521 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/swagger/index.html - null null
+2025-05-25 23:16:42.767 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/swagger/index.html - 200 null text/html;charset=utf-8 245.7408ms
+2025-05-25 23:16:42.992 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/swagger/v1/swagger.json - null null
+2025-05-25 23:16:43.352 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 360.0172ms
+2025-05-25 23:18:26.346 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/news/company/AAPL?from=2024-05-01&to=2024-05-25 - null null
+2025-05-25 23:18:26.363 +05:30 [INF] Executing endpoint 'YourNamespace.Controllers.NewsController.GetCompanyNews (WisVest)'
+2025-05-25 23:18:26.431 +05:30 [INF] Route matched with {action = "GetCompanyNews", controller = "News"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCompanyNews(System.String, System.String, System.String) on controller YourNamespace.Controllers.NewsController (WisVest).
+2025-05-25 23:18:26.476 +05:30 [INF] Start processing HTTP request GET https://finnhub.io/api/v1/company-news?symbol=AAPL&from=2024-05-01&to=2024-05-25&token=d0p3m39r01qr8ds1ajt0d0p3m39r01qr8ds1ajtg
+2025-05-25 23:18:26.482 +05:30 [INF] Sending HTTP request GET https://finnhub.io/api/v1/company-news?symbol=AAPL&from=2024-05-01&to=2024-05-25&token=d0p3m39r01qr8ds1ajt0d0p3m39r01qr8ds1ajtg
+2025-05-25 23:18:27.137 +05:30 [INF] Received HTTP response headers after 650.7382ms - 200
+2025-05-25 23:18:27.143 +05:30 [INF] End processing HTTP request after 666.6446ms - 200
+2025-05-25 23:18:27.150 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-05-25 23:18:27.157 +05:30 [INF] Executed action YourNamespace.Controllers.NewsController.GetCompanyNews (WisVest) in 720.475ms
+2025-05-25 23:18:27.164 +05:30 [INF] Executed endpoint 'YourNamespace.Controllers.NewsController.GetCompanyNews (WisVest)'
+2025-05-25 23:18:27.171 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/news/company/AAPL?from=2024-05-01&to=2024-05-25 - 200 null text/plain; charset=utf-8 825.2169ms
+2025-05-25 23:18:39.327 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/news/company/AAPL?from=2024-05-01&to=2024-05-24 - null null
+2025-05-25 23:18:39.334 +05:30 [INF] Executing endpoint 'YourNamespace.Controllers.NewsController.GetCompanyNews (WisVest)'
+2025-05-25 23:18:39.340 +05:30 [INF] Route matched with {action = "GetCompanyNews", controller = "News"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCompanyNews(System.String, System.String, System.String) on controller YourNamespace.Controllers.NewsController (WisVest).
+2025-05-25 23:18:39.346 +05:30 [INF] Start processing HTTP request GET https://finnhub.io/api/v1/company-news?symbol=AAPL&from=2024-05-01&to=2024-05-24&token=d0p3m39r01qr8ds1ajt0d0p3m39r01qr8ds1ajtg
+2025-05-25 23:18:39.350 +05:30 [INF] Sending HTTP request GET https://finnhub.io/api/v1/company-news?symbol=AAPL&from=2024-05-01&to=2024-05-24&token=d0p3m39r01qr8ds1ajt0d0p3m39r01qr8ds1ajtg
+2025-05-25 23:18:39.606 +05:30 [INF] Received HTTP response headers after 253.2589ms - 200
+2025-05-25 23:18:39.610 +05:30 [INF] End processing HTTP request after 264.0223ms - 200
+2025-05-25 23:18:39.614 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-05-25 23:18:39.617 +05:30 [INF] Executed action YourNamespace.Controllers.NewsController.GetCompanyNews (WisVest) in 271.2718ms
+2025-05-25 23:18:39.621 +05:30 [INF] Executed endpoint 'YourNamespace.Controllers.NewsController.GetCompanyNews (WisVest)'
+2025-05-25 23:18:39.624 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/news/company/AAPL?from=2024-05-01&to=2024-05-24 - 200 null text/plain; charset=utf-8 296.6679ms

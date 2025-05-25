@@ -1,0 +1,25 @@
+2025-05-24 23:53:06.847 +05:30 [INF] User profile is available. Using 'C:\Users\hitha\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-24 23:53:07.021 +05:30 [INF] Now listening on: http://localhost:5251
+2025-05-24 23:53:07.027 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-24 23:53:07.030 +05:30 [INF] Hosting environment: Development
+2025-05-24 23:53:07.033 +05:30 [INF] Content root path: C:\Users\hitha\WisVest-AI\Sprint 2 backend
+2025-05-24 23:53:47.695 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/ - null null
+2025-05-24 23:53:47.895 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/ - 404 0 null 205.0219ms
+2025-05-24 23:53:47.913 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5251/, Response status code: 404
+2025-05-24 23:53:59.871 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/swagger/index.html - null null
+2025-05-24 23:53:59.988 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/swagger/index.html - 200 null text/html;charset=utf-8 117.8487ms
+2025-05-24 23:54:00.223 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/swagger/v1/swagger.json - null null
+2025-05-24 23:54:00.383 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 159.4763ms
+2025-05-24 23:54:30.169 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5251/api/chatbot/ask - application/json 30
+2025-05-24 23:54:30.176 +05:30 [INF] CORS policy execution failed.
+2025-05-24 23:54:30.179 +05:30 [INF] Request origin http://localhost:5251 does not have permission to access the resource.
+2025-05-24 23:54:30.194 +05:30 [INF] Executing endpoint 'YourNamespace.Controllers.ChatbotController.Ask (WisVest)'
+2025-05-24 23:54:30.236 +05:30 [INF] Route matched with {action = "Ask", controller = "Chatbot"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Ask(YourNamespace.Controllers.ChatRequest) on controller YourNamespace.Controllers.ChatbotController (WisVest).
+2025-05-24 23:54:30.334 +05:30 [INF] Start processing HTTP request POST https://api-inference.huggingface.co/models/facebook/blenderbot-400M-distill
+2025-05-24 23:54:30.339 +05:30 [INF] Sending HTTP request POST https://api-inference.huggingface.co/models/facebook/blenderbot-400M-distill
+2025-05-24 23:54:31.742 +05:30 [INF] Received HTTP response headers after 1398.8916ms - 404
+2025-05-24 23:54:31.749 +05:30 [INF] End processing HTTP request after 1419.5587ms - 404
+2025-05-24 23:54:31.762 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2025-05-24 23:54:31.830 +05:30 [INF] Executed action YourNamespace.Controllers.ChatbotController.Ask (WisVest) in 1586.5594ms
+2025-05-24 23:54:31.839 +05:30 [INF] Executed endpoint 'YourNamespace.Controllers.ChatbotController.Ask (WisVest)'
+2025-05-24 23:54:31.847 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5251/api/chatbot/ask - 404 null text/plain; charset=utf-8 1678.1608ms

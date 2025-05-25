@@ -1,0 +1,562 @@
+2025-05-20 23:34:30.576 +05:30 [INF] User profile is available. Using 'C:\Users\hitha\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-20 23:34:30.684 +05:30 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5251: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ ---> System.Net.Sockets.SocketException (10048): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-05-20 23:36:19.342 +05:30 [INF] User profile is available. Using 'C:\Users\hitha\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-20 23:36:19.512 +05:30 [INF] Now listening on: http://localhost:5251
+2025-05-20 23:36:19.517 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-20 23:36:19.522 +05:30 [INF] Hosting environment: Development
+2025-05-20 23:36:19.524 +05:30 [INF] Content root path: C:\Users\hitha\Sprint 2 backend
+2025-05-20 23:36:48.672 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5251/api/auth/login - null null
+2025-05-20 23:36:48.792 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:36:48.808 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5251/api/auth/login - 204 null null 138.0017ms
+2025-05-20 23:36:48.823 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5251/api/auth/login - application/json 47
+2025-05-20 23:36:48.955 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:36:48.962 +05:30 [INF] Executing endpoint 'WisVestAPI.Controllers.AuthController.Login (WisVest)'
+2025-05-20 23:36:49.001 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(LoginRequest) on controller WisVestAPI.Controllers.AuthController (WisVest).
+2025-05-20 23:36:49.273 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-20 23:36:49.316 +05:30 [INF] Executed action WisVestAPI.Controllers.AuthController.Login (WisVest) in 311.1138ms
+2025-05-20 23:36:49.318 +05:30 [INF] Executed endpoint 'WisVestAPI.Controllers.AuthController.Login (WisVest)'
+2025-05-20 23:36:49.319 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5251/api/auth/login - 200 null application/json; charset=utf-8 496.4289ms
+2025-05-20 23:37:07.308 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5251/api/Allocation/compute - null null
+2025-05-20 23:37:07.313 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:37:07.314 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5251/api/Allocation/compute - 204 null null 5.5753ms
+2025-05-20 23:37:07.317 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5251/api/Allocation/compute - application/json 97
+2025-05-20 23:37:07.321 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:37:07.323 +05:30 [INF] Executing endpoint 'WisVestAPI.Controllers.AllocationController.GetAllocation (WisVest)'
+2025-05-20 23:37:07.368 +05:30 [INF] Route matched with {action = "GetAllocation", controller = "Allocation"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[WisVestAPI.Models.DTOs.AllocationResultDTO]] GetAllocation(WisVestAPI.Models.DTOs.UserInputDTO) on controller WisVestAPI.Controllers.AllocationController (WisVest).
+2025-05-20 23:37:07.399 +05:30 [INF] Starting allocation calculation...
+2025-05-20 23:37:07.432 +05:30 [INF] Allocation matrix loaded successfully.
+2025-05-20 23:37:07.434 +05:30 [INF] Looking up base allocation for key: High+Mod
+2025-05-20 23:37:07.444 +05:30 [INF] Base allocation found: {"equity":60,"fixedIncome":20,"commodities":10,"cash":5,"realEstate":5}
+2025-05-20 23:37:07.447 +05:30 [INF] Looking up age adjustment rules for key: 30-45
+2025-05-20 23:37:07.448 +05:30 [INF] Age adjustments found: {}
+2025-05-20 23:37:07.449 +05:30 [INF] Looking up goal tuning for goal: Retirement
+2025-05-20 23:37:07.460 +05:30 [INF] Goal tuning found: {"fixedIncome_boost":10,"realEstate_boost":5}
+2025-05-20 23:37:07.531 +05:30 [INF] Sub-allocations for equity: {"Large Cap":11.25,"Mid Cap":15,"Small Cap":18.75}
+2025-05-20 23:37:07.533 +05:30 [INF] Sub-allocations for fixedIncome: {"Gov Bonds":5,"Corp Bonds":20,"Fixed Dep":5}
+2025-05-20 23:37:07.536 +05:30 [INF] Sub-allocations for commodities: {"Precious Metals":1.67,"Energy":4.17,"Agriculture":4.17}
+2025-05-20 23:37:07.543 +05:30 [INF] Sub-allocations for cash: {"Liquid Mutual Funds":2.5,"Savings Acc":1.25,"T. Bill":1.25}
+2025-05-20 23:37:07.546 +05:30 [INF] Sub-allocations for realEstate: {"REITs":2.22,"Residential Prop":2.22,"Commercial Prop":5.56}
+2025-05-20 23:37:07.549 +05:30 [INF] Added sub-assets for equity: {"Large Cap":11.25,"Mid Cap":15,"Small Cap":18.75}
+2025-05-20 23:37:07.551 +05:30 [INF] Added sub-assets for fixedIncome: {"Gov Bonds":5,"Corp Bonds":20,"Fixed Dep":5}
+2025-05-20 23:37:07.553 +05:30 [INF] Added sub-assets for commodities: {"Precious Metals":1.67,"Energy":4.17,"Agriculture":4.17}
+2025-05-20 23:37:07.563 +05:30 [INF] Added sub-assets for cash: {"Liquid Mutual Funds":2.5,"Savings Acc":1.25,"T. Bill":1.25}
+2025-05-20 23:37:07.565 +05:30 [INF] Added sub-assets for realEstate: {"REITs":2.22,"Residential Prop":2.22,"Commercial Prop":5.56}
+2025-05-20 23:37:07.600 +05:30 [INF] Final formatted allocation: {"equity":{"percentage":45,"subAssets":{"Large Cap":11.25,"Mid Cap":15,"Small Cap":18.75}},"fixedIncome":{"percentage":30,"subAssets":{"Gov Bonds":5,"Corp Bonds":20,"Fixed Dep":5}},"commodities":{"percentage":10,"subAssets":{"Precious Metals":1.67,"Energy":4.17,"Agriculture":4.17}},"cash":{"percentage":5,"subAssets":{"Liquid Mutual Funds":2.5,"Savings Acc":1.25,"T. Bill":1.25}},"realEstate":{"percentage":10,"subAssets":{"REITs":2.22,"Residential Prop":2.22,"Commercial Prop":5.56}}}
+2025-05-20 23:37:07.617 +05:30 [INF] Final allocation saved successfully to FinalAllocation.json
+2025-05-20 23:37:07.619 +05:30 [INF] Final formatted allocation: {"equity":{"percentage":45,"subAssets":{"Large Cap":11.25,"Mid Cap":15,"Small Cap":18.75}},"fixedIncome":{"percentage":30,"subAssets":{"Gov Bonds":5,"Corp Bonds":20,"Fixed Dep":5}},"commodities":{"percentage":10,"subAssets":{"Precious Metals":1.67,"Energy":4.17,"Agriculture":4.17}},"cash":{"percentage":5,"subAssets":{"Liquid Mutual Funds":2.5,"Savings Acc":1.25,"T. Bill":1.25}},"realEstate":{"percentage":10,"subAssets":{"REITs":2.22,"Residential Prop":2.22,"Commercial Prop":5.56}}}
+2025-05-20 23:37:07.628 +05:30 [INF] Executing OkObjectResult, writing value of type 'WisVestAPI.Models.DTOs.AllocationResultDTO'.
+2025-05-20 23:37:07.635 +05:30 [INF] Executed action WisVestAPI.Controllers.AllocationController.GetAllocation (WisVest) in 265.1846ms
+2025-05-20 23:37:07.639 +05:30 [INF] Executed endpoint 'WisVestAPI.Controllers.AllocationController.GetAllocation (WisVest)'
+2025-05-20 23:37:07.642 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5251/api/Allocation/compute - 200 null application/json; charset=utf-8 325.197ms
+2025-05-20 23:37:07.647 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5251/api/ProductAllocation/calculate-product-allocations?targetAmount=230000&investmentHorizon=6 - null null
+2025-05-20 23:37:07.652 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:37:07.654 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5251/api/ProductAllocation/calculate-product-allocations?targetAmount=230000&investmentHorizon=6 - 204 null null 6.9649ms
+2025-05-20 23:37:07.658 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5251/api/ProductAllocation/calculate-product-allocations?targetAmount=230000&investmentHorizon=6 - application/json 497
+2025-05-20 23:37:07.663 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:37:07.665 +05:30 [INF] Executing endpoint 'WisVestAPI.Controllers.ProductAllocationController.CalculateProductAllocations (WisVest)'
+2025-05-20 23:37:07.676 +05:30 [INF] Route matched with {action = "CalculateProductAllocations", controller = "ProductAllocation"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CalculateProductAllocations(WisVestAPI.Models.DTOs.AllocationResultDTO, Double, Int32) on controller WisVestAPI.Controllers.ProductAllocationController (WisVest).
+2025-05-20 23:37:07.717 +05:30 [INF] Sub-allocation Data Received: {"Assets":{"equity":{"Percentage":45,"SubAssets":{"Large Cap":11.25,"Mid Cap":15,"Small Cap":18.75}},"fixedIncome":{"Percentage":30,"SubAssets":{"Gov Bonds":5,"Corp Bonds":20,"Fixed Dep":5}},"commodities":{"Percentage":10,"SubAssets":{"Precious Metals":1.67,"Energy":4.17,"Agriculture":4.17}},"cash":{"Percentage":5,"SubAssets":{"Liquid Mutual Funds":2.5,"Savings Acc":1.25,"T. Bill":1.25}},"realEstate":{"Percentage":10,"SubAssets":{"REITs":2.22,"Residential Prop":2.22,"Commercial Prop":5.56}}}}
+2025-05-20 23:37:07.719 +05:30 [INF] Target Amount: 230000
+2025-05-20 23:37:07.721 +05:30 [INF] Investment Horizon: 6
+2025-05-20 23:37:07.727 +05:30 [INF] Starting product allocation calculation.
+2025-05-20 23:37:07.747 +05:30 [INF] Calculating investment amount with PercentageSplit: 5.86, TargetAmount: 230000, AnnualReturn: 10, InvestmentHorizon: 6.
+2025-05-20 23:37:07.749 +05:30 [INF] Calculated investment amount: 7607.98.
+2025-05-20 23:37:07.750 +05:30 [INF] Calculating investment amount with PercentageSplit: 5.39, TargetAmount: 230000, AnnualReturn: 9.2, InvestmentHorizon: 6.
+2025-05-20 23:37:07.753 +05:30 [INF] Calculated investment amount: 7311.07.
+2025-05-20 23:37:07.759 +05:30 [INF] Calculating investment amount with PercentageSplit: 7.98, TargetAmount: 230000, AnnualReturn: 12.5, InvestmentHorizon: 6.
+2025-05-20 23:37:07.790 +05:30 [INF] Calculated investment amount: 9053.48.
+2025-05-20 23:37:07.792 +05:30 [INF] Calculating investment amount with PercentageSplit: 7.02, TargetAmount: 230000, AnnualReturn: 11, InvestmentHorizon: 6.
+2025-05-20 23:37:07.795 +05:30 [INF] Calculated investment amount: 8632.31.
+2025-05-20 23:37:07.797 +05:30 [INF] Calculating investment amount with PercentageSplit: 9.65, TargetAmount: 230000, AnnualReturn: 14, InvestmentHorizon: 6.
+2025-05-20 23:37:07.799 +05:30 [INF] Calculated investment amount: 10111.74.
+2025-05-20 23:37:07.801 +05:30 [INF] Calculating investment amount with PercentageSplit: 9.1, TargetAmount: 230000, AnnualReturn: 13.2, InvestmentHorizon: 6.
+2025-05-20 23:37:07.804 +05:30 [INF] Calculated investment amount: 9946.97.
+2025-05-20 23:37:07.807 +05:30 [INF] Calculating investment amount with PercentageSplit: 2.55, TargetAmount: 230000, AnnualReturn: 5, InvestmentHorizon: 6.
+2025-05-20 23:37:07.816 +05:30 [INF] Calculated investment amount: 4376.55.
+2025-05-20 23:37:07.818 +05:30 [INF] Calculating investment amount with PercentageSplit: 2.45, TargetAmount: 230000, AnnualReturn: 4.8, InvestmentHorizon: 6.
+2025-05-20 23:37:07.820 +05:30 [INF] Calculated investment amount: 4253.3.
+2025-05-20 23:37:07.823 +05:30 [INF] Calculating investment amount with PercentageSplit: 9.78, TargetAmount: 230000, AnnualReturn: 6.8, InvestmentHorizon: 6.
+2025-05-20 23:37:07.826 +05:30 [INF] Calculated investment amount: 15157.9.
+2025-05-20 23:37:07.828 +05:30 [INF] Calculating investment amount with PercentageSplit: 10.22, TargetAmount: 230000, AnnualReturn: 7.1, InvestmentHorizon: 6.
+2025-05-20 23:37:07.830 +05:30 [INF] Calculated investment amount: 15575.5.
+2025-05-20 23:37:07.831 +05:30 [INF] Calculating investment amount with PercentageSplit: 2.46, TargetAmount: 230000, AnnualReturn: 5.5, InvestmentHorizon: 6.
+2025-05-20 23:37:07.835 +05:30 [INF] Calculated investment amount: 4103.44.
+2025-05-20 23:37:07.838 +05:30 [INF] Calculating investment amount with PercentageSplit: 2.54, TargetAmount: 230000, AnnualReturn: 5.7, InvestmentHorizon: 6.
+2025-05-20 23:37:07.842 +05:30 [INF] Calculated investment amount: 4189.01.
+2025-05-20 23:37:07.843 +05:30 [INF] Calculating investment amount with PercentageSplit: 0.92, TargetAmount: 230000, AnnualReturn: 7.8, InvestmentHorizon: 6.
+2025-05-20 23:37:07.845 +05:30 [INF] Calculated investment amount: 1348.35.
+2025-05-20 23:37:07.847 +05:30 [INF] Calculating investment amount with PercentageSplit: 0.75, TargetAmount: 230000, AnnualReturn: 6.3, InvestmentHorizon: 6.
+2025-05-20 23:37:07.849 +05:30 [INF] Calculated investment amount: 1195.61.
+2025-05-20 23:37:07.852 +05:30 [INF] Calculating investment amount with PercentageSplit: 1.97, TargetAmount: 230000, AnnualReturn: 9.2, InvestmentHorizon: 6.
+2025-05-20 23:37:07.856 +05:30 [INF] Calculated investment amount: 2672.13.
+2025-05-20 23:37:07.857 +05:30 [INF] Calculating investment amount with PercentageSplit: 2.2, TargetAmount: 230000, AnnualReturn: 10.3, InvestmentHorizon: 6.
+2025-05-20 23:37:07.859 +05:30 [INF] Calculated investment amount: 2809.94.
+2025-05-20 23:37:07.861 +05:30 [INF] Calculating investment amount with PercentageSplit: 2.29, TargetAmount: 230000, AnnualReturn: 8.5, InvestmentHorizon: 6.
+2025-05-20 23:37:07.863 +05:30 [INF] Calculated investment amount: 3228.38.
+2025-05-20 23:37:07.865 +05:30 [INF] Calculating investment amount with PercentageSplit: 1.88, TargetAmount: 230000, AnnualReturn: 7, InvestmentHorizon: 6.
+2025-05-20 23:37:07.869 +05:30 [INF] Calculated investment amount: 2881.26.
+2025-05-20 23:37:07.870 +05:30 [INF] Calculating investment amount with PercentageSplit: 1.27, TargetAmount: 230000, AnnualReturn: 5.2, InvestmentHorizon: 6.
+2025-05-20 23:37:07.872 +05:30 [INF] Calculated investment amount: 2154.95.
+2025-05-20 23:37:07.874 +05:30 [INF] Calculating investment amount with PercentageSplit: 1.23, TargetAmount: 230000, AnnualReturn: 5, InvestmentHorizon: 6.
+2025-05-20 23:37:07.875 +05:30 [INF] Calculated investment amount: 2111.04.
+2025-05-20 23:37:07.877 +05:30 [INF] Calculating investment amount with PercentageSplit: 0.58, TargetAmount: 230000, AnnualReturn: 3.5, InvestmentHorizon: 6.
+2025-05-20 23:37:07.881 +05:30 [INF] Calculated investment amount: 1085.21.
+2025-05-20 23:37:07.882 +05:30 [INF] Calculating investment amount with PercentageSplit: 0.67, TargetAmount: 230000, AnnualReturn: 4, InvestmentHorizon: 6.
+2025-05-20 23:37:07.884 +05:30 [INF] Calculated investment amount: 1217.87.
+2025-05-20 23:37:07.885 +05:30 [INF] Calculating investment amount with PercentageSplit: 0.61, TargetAmount: 230000, AnnualReturn: 5.1, InvestmentHorizon: 6.
+2025-05-20 23:37:07.888 +05:30 [INF] Calculated investment amount: 1040.98.
+2025-05-20 23:37:07.890 +05:30 [INF] Calculating investment amount with PercentageSplit: 0.64, TargetAmount: 230000, AnnualReturn: 5.4, InvestmentHorizon: 6.
+2025-05-20 23:37:07.892 +05:30 [INF] Calculated investment amount: 1073.65.
+2025-05-20 23:37:07.893 +05:30 [INF] Calculating investment amount with PercentageSplit: 1.07, TargetAmount: 230000, AnnualReturn: 8.9, InvestmentHorizon: 6.
+2025-05-20 23:37:07.896 +05:30 [INF] Calculated investment amount: 1475.52.
+2025-05-20 23:37:07.897 +05:30 [INF] Calculating investment amount with PercentageSplit: 1.15, TargetAmount: 230000, AnnualReturn: 9.5, InvestmentHorizon: 6.
+2025-05-20 23:37:07.900 +05:30 [INF] Calculated investment amount: 1534.41.
+2025-05-20 23:37:07.901 +05:30 [INF] Calculating investment amount with PercentageSplit: 1.06, TargetAmount: 230000, AnnualReturn: 6.7, InvestmentHorizon: 6.
+2025-05-20 23:37:07.903 +05:30 [INF] Calculated investment amount: 1652.14.
+2025-05-20 23:37:07.904 +05:30 [INF] Calculating investment amount with PercentageSplit: 1.16, TargetAmount: 230000, AnnualReturn: 7.3, InvestmentHorizon: 6.
+2025-05-20 23:37:07.906 +05:30 [INF] Calculated investment amount: 1748.19.
+2025-05-20 23:37:07.907 +05:30 [INF] Calculating investment amount with PercentageSplit: 2.84, TargetAmount: 230000, AnnualReturn: 10.2, InvestmentHorizon: 6.
+2025-05-20 23:37:07.909 +05:30 [INF] Calculated investment amount: 3647.18.
+2025-05-20 23:37:07.912 +05:30 [INF] Calculating investment amount with PercentageSplit: 2.72, TargetAmount: 230000, AnnualReturn: 9.8, InvestmentHorizon: 6.
+2025-05-20 23:37:07.914 +05:30 [INF] Calculated investment amount: 3570.12.
+2025-05-20 23:37:07.932 +05:30 [INF] Product allocations saved to ProductAllocations.json
+2025-05-20 23:37:07.934 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[WisVestAPI.Models.Matrix.Product, WisVest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-20 23:37:07.937 +05:30 [INF] Executed action WisVestAPI.Controllers.ProductAllocationController.CalculateProductAllocations (WisVest) in 257.2577ms
+2025-05-20 23:37:07.941 +05:30 [INF] Executed endpoint 'WisVestAPI.Controllers.ProductAllocationController.CalculateProductAllocations (WisVest)'
+2025-05-20 23:37:07.943 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5251/api/ProductAllocation/calculate-product-allocations?targetAmount=230000&investmentHorizon=6 - 200 null application/json; charset=utf-8 285.0841ms
+2025-05-20 23:37:07.962 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5251/api/ProductAllocation/get-product-allocations - null null
+2025-05-20 23:37:07.963 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5251/api/Allocation/get-calculated-allocations - null null
+2025-05-20 23:37:07.969 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:37:07.971 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:37:07.975 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5251/api/ProductAllocation/get-product-allocations - 204 null null 12.3071ms
+2025-05-20 23:37:07.976 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5251/api/Allocation/get-calculated-allocations - 204 null null 13.2891ms
+2025-05-20 23:37:07.981 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/Allocation/get-calculated-allocations - null null
+2025-05-20 23:37:07.984 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/ProductAllocation/get-product-allocations - null null
+2025-05-20 23:37:07.992 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:37:07.993 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:37:07.993 +05:30 [INF] Executing endpoint 'WisVestAPI.Controllers.AllocationController.GetCalculatedAllocations (WisVest)'
+2025-05-20 23:37:07.994 +05:30 [INF] Executing endpoint 'WisVestAPI.Controllers.ProductAllocationController.GetProductAllocations (WisVest)'
+2025-05-20 23:37:08.000 +05:30 [INF] Route matched with {action = "GetCalculatedAllocations", controller = "Allocation"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCalculatedAllocations() on controller WisVestAPI.Controllers.AllocationController (WisVest).
+2025-05-20 23:37:08.001 +05:30 [INF] Route matched with {action = "GetProductAllocations", controller = "ProductAllocation"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductAllocations() on controller WisVestAPI.Controllers.ProductAllocationController (WisVest).
+2025-05-20 23:37:08.012 +05:30 [INF] Attempting to read final allocation from JSON file: FinalAllocation.json
+2025-05-20 23:37:08.017 +05:30 [INF] Final allocation JSON read successfully.
+2025-05-20 23:37:08.020 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-20 23:37:08.027 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`2[[System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[WisVestAPI.Models.Matrix.Product, WisVest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-20 23:37:08.028 +05:30 [INF] Executed action WisVestAPI.Controllers.AllocationController.GetCalculatedAllocations (WisVest) in 25.6064ms
+2025-05-20 23:37:08.033 +05:30 [INF] Executed endpoint 'WisVestAPI.Controllers.AllocationController.GetCalculatedAllocations (WisVest)'
+2025-05-20 23:37:08.034 +05:30 [INF] Executed action WisVestAPI.Controllers.ProductAllocationController.GetProductAllocations (WisVest) in 18.3717ms
+2025-05-20 23:37:08.034 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/Allocation/get-calculated-allocations - 200 null application/json; charset=utf-8 53.4934ms
+2025-05-20 23:37:08.036 +05:30 [INF] Executed endpoint 'WisVestAPI.Controllers.ProductAllocationController.GetProductAllocations (WisVest)'
+2025-05-20 23:37:08.044 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/ProductAllocation/get-product-allocations - 200 null application/json; charset=utf-8 60.3661ms
+2025-05-20 23:39:42.983 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5251/api/ProductAllocation/get-product-allocations - null null
+2025-05-20 23:39:42.983 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5251/api/Allocation/get-calculated-allocations - null null
+2025-05-20 23:39:43.015 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:39:43.015 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:39:43.020 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5251/api/Allocation/get-calculated-allocations - 204 null null 39.5133ms
+2025-05-20 23:39:43.020 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5251/api/ProductAllocation/get-product-allocations - 204 null null 39.5134ms
+2025-05-20 23:39:43.025 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/ProductAllocation/get-product-allocations - null null
+2025-05-20 23:39:43.028 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/Allocation/get-calculated-allocations - null null
+2025-05-20 23:39:43.051 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:39:43.051 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:39:43.056 +05:30 [INF] Executing endpoint 'WisVestAPI.Controllers.ProductAllocationController.GetProductAllocations (WisVest)'
+2025-05-20 23:39:43.056 +05:30 [INF] Executing endpoint 'WisVestAPI.Controllers.AllocationController.GetCalculatedAllocations (WisVest)'
+2025-05-20 23:39:43.070 +05:30 [INF] Route matched with {action = "GetProductAllocations", controller = "ProductAllocation"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductAllocations() on controller WisVestAPI.Controllers.ProductAllocationController (WisVest).
+2025-05-20 23:39:43.070 +05:30 [INF] Route matched with {action = "GetCalculatedAllocations", controller = "Allocation"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCalculatedAllocations() on controller WisVestAPI.Controllers.AllocationController (WisVest).
+2025-05-20 23:39:43.092 +05:30 [INF] Attempting to read final allocation from JSON file: FinalAllocation.json
+2025-05-20 23:39:43.101 +05:30 [INF] Final allocation JSON read successfully.
+2025-05-20 23:39:43.110 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-20 23:39:43.112 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`2[[System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[WisVestAPI.Models.Matrix.Product, WisVest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-20 23:39:43.114 +05:30 [INF] Executed action WisVestAPI.Controllers.AllocationController.GetCalculatedAllocations (WisVest) in 36.2168ms
+2025-05-20 23:39:43.116 +05:30 [INF] Executed action WisVestAPI.Controllers.ProductAllocationController.GetProductAllocations (WisVest) in 40.6806ms
+2025-05-20 23:39:43.116 +05:30 [INF] Executed endpoint 'WisVestAPI.Controllers.AllocationController.GetCalculatedAllocations (WisVest)'
+2025-05-20 23:39:43.120 +05:30 [INF] Executed endpoint 'WisVestAPI.Controllers.ProductAllocationController.GetProductAllocations (WisVest)'
+2025-05-20 23:39:43.121 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/Allocation/get-calculated-allocations - 200 null application/json; charset=utf-8 93.6105ms
+2025-05-20 23:39:43.125 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/ProductAllocation/get-product-allocations - 200 null application/json; charset=utf-8 100.0742ms
+2025-05-20 23:39:49.514 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5251/api/ProductAllocation/get-product-allocations - null null
+2025-05-20 23:39:49.515 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5251/api/Allocation/get-calculated-allocations - null null
+2025-05-20 23:39:49.517 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:39:49.517 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:39:49.519 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5251/api/Allocation/get-calculated-allocations - 204 null null 3.306ms
+2025-05-20 23:39:49.519 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5251/api/ProductAllocation/get-product-allocations - 204 null null 4.5361ms
+2025-05-20 23:39:49.529 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/ProductAllocation/get-product-allocations - null null
+2025-05-20 23:39:49.532 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/Allocation/get-calculated-allocations - null null
+2025-05-20 23:39:49.534 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:39:49.536 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:39:49.536 +05:30 [INF] Executing endpoint 'WisVestAPI.Controllers.ProductAllocationController.GetProductAllocations (WisVest)'
+2025-05-20 23:39:49.537 +05:30 [INF] Executing endpoint 'WisVestAPI.Controllers.AllocationController.GetCalculatedAllocations (WisVest)'
+2025-05-20 23:39:49.539 +05:30 [INF] Route matched with {action = "GetProductAllocations", controller = "ProductAllocation"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductAllocations() on controller WisVestAPI.Controllers.ProductAllocationController (WisVest).
+2025-05-20 23:39:49.566 +05:30 [INF] Route matched with {action = "GetCalculatedAllocations", controller = "Allocation"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCalculatedAllocations() on controller WisVestAPI.Controllers.AllocationController (WisVest).
+2025-05-20 23:39:49.599 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`2[[System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[WisVestAPI.Models.Matrix.Product, WisVest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-20 23:39:49.601 +05:30 [INF] Attempting to read final allocation from JSON file: FinalAllocation.json
+2025-05-20 23:39:49.611 +05:30 [INF] Executed action WisVestAPI.Controllers.ProductAllocationController.GetProductAllocations (WisVest) in 27.3943ms
+2025-05-20 23:39:49.614 +05:30 [INF] Final allocation JSON read successfully.
+2025-05-20 23:39:49.617 +05:30 [INF] Executed endpoint 'WisVestAPI.Controllers.ProductAllocationController.GetProductAllocations (WisVest)'
+2025-05-20 23:39:49.619 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-20 23:39:49.631 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/ProductAllocation/get-product-allocations - 200 null application/json; charset=utf-8 102.2205ms
+2025-05-20 23:39:49.634 +05:30 [INF] Executed action WisVestAPI.Controllers.AllocationController.GetCalculatedAllocations (WisVest) in 33.4364ms
+2025-05-20 23:39:49.643 +05:30 [INF] Executed endpoint 'WisVestAPI.Controllers.AllocationController.GetCalculatedAllocations (WisVest)'
+2025-05-20 23:39:49.646 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/Allocation/get-calculated-allocations - 200 null application/json; charset=utf-8 114.5317ms
+2025-05-20 23:39:53.370 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/ProductAllocation/get-product-allocations - null null
+2025-05-20 23:39:53.370 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/Allocation/get-calculated-allocations - null null
+2025-05-20 23:39:53.378 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:39:53.382 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:39:53.382 +05:30 [INF] Executing endpoint 'WisVestAPI.Controllers.ProductAllocationController.GetProductAllocations (WisVest)'
+2025-05-20 23:39:53.383 +05:30 [INF] Executing endpoint 'WisVestAPI.Controllers.AllocationController.GetCalculatedAllocations (WisVest)'
+2025-05-20 23:39:53.393 +05:30 [INF] Route matched with {action = "GetProductAllocations", controller = "ProductAllocation"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductAllocations() on controller WisVestAPI.Controllers.ProductAllocationController (WisVest).
+2025-05-20 23:39:53.396 +05:30 [INF] Route matched with {action = "GetCalculatedAllocations", controller = "Allocation"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCalculatedAllocations() on controller WisVestAPI.Controllers.AllocationController (WisVest).
+2025-05-20 23:39:53.401 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`2[[System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[WisVestAPI.Models.Matrix.Product, WisVest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-20 23:39:53.402 +05:30 [INF] Attempting to read final allocation from JSON file: FinalAllocation.json
+2025-05-20 23:39:53.406 +05:30 [INF] Final allocation JSON read successfully.
+2025-05-20 23:39:53.412 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-20 23:39:53.404 +05:30 [INF] Executed action WisVestAPI.Controllers.ProductAllocationController.GetProductAllocations (WisVest) in 5.6018ms
+2025-05-20 23:39:53.416 +05:30 [INF] Executed action WisVestAPI.Controllers.AllocationController.GetCalculatedAllocations (WisVest) in 14.2579ms
+2025-05-20 23:39:53.418 +05:30 [INF] Executed endpoint 'WisVestAPI.Controllers.ProductAllocationController.GetProductAllocations (WisVest)'
+2025-05-20 23:39:53.421 +05:30 [INF] Executed endpoint 'WisVestAPI.Controllers.AllocationController.GetCalculatedAllocations (WisVest)'
+2025-05-20 23:39:53.423 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/ProductAllocation/get-product-allocations - 200 null application/json; charset=utf-8 52.8935ms
+2025-05-20 23:39:53.425 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/Allocation/get-calculated-allocations - 200 null application/json; charset=utf-8 55.1309ms
+2025-05-20 23:39:56.399 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5251/api/ProductAllocation/get-product-allocations - null null
+2025-05-20 23:39:56.399 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5251/api/Allocation/get-calculated-allocations - null null
+2025-05-20 23:39:56.407 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:39:56.410 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:39:56.411 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5251/api/ProductAllocation/get-product-allocations - 204 null null 12.3626ms
+2025-05-20 23:39:56.411 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5251/api/Allocation/get-calculated-allocations - 204 null null 12.511ms
+2025-05-20 23:39:56.421 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/Allocation/get-calculated-allocations - null null
+2025-05-20 23:39:56.428 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/ProductAllocation/get-product-allocations - null null
+2025-05-20 23:39:56.431 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:39:56.436 +05:30 [INF] Executing endpoint 'WisVestAPI.Controllers.AllocationController.GetCalculatedAllocations (WisVest)'
+2025-05-20 23:39:56.435 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:39:56.437 +05:30 [INF] Route matched with {action = "GetCalculatedAllocations", controller = "Allocation"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCalculatedAllocations() on controller WisVestAPI.Controllers.AllocationController (WisVest).
+2025-05-20 23:39:56.438 +05:30 [INF] Executing endpoint 'WisVestAPI.Controllers.ProductAllocationController.GetProductAllocations (WisVest)'
+2025-05-20 23:39:56.444 +05:30 [INF] Attempting to read final allocation from JSON file: FinalAllocation.json
+2025-05-20 23:39:56.446 +05:30 [INF] Route matched with {action = "GetProductAllocations", controller = "ProductAllocation"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductAllocations() on controller WisVestAPI.Controllers.ProductAllocationController (WisVest).
+2025-05-20 23:39:56.447 +05:30 [INF] Final allocation JSON read successfully.
+2025-05-20 23:39:56.451 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-20 23:39:56.452 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`2[[System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[WisVestAPI.Models.Matrix.Product, WisVest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-20 23:39:56.453 +05:30 [INF] Executed action WisVestAPI.Controllers.AllocationController.GetCalculatedAllocations (WisVest) in 9.8813ms
+2025-05-20 23:39:56.461 +05:30 [INF] Executed endpoint 'WisVestAPI.Controllers.AllocationController.GetCalculatedAllocations (WisVest)'
+2025-05-20 23:39:56.460 +05:30 [INF] Executed action WisVestAPI.Controllers.ProductAllocationController.GetProductAllocations (WisVest) in 11.1404ms
+2025-05-20 23:39:56.463 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/Allocation/get-calculated-allocations - 200 null application/json; charset=utf-8 42.8402ms
+2025-05-20 23:39:56.465 +05:30 [INF] Executed endpoint 'WisVestAPI.Controllers.ProductAllocationController.GetProductAllocations (WisVest)'
+2025-05-20 23:39:56.471 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/ProductAllocation/get-product-allocations - 200 null application/json; charset=utf-8 43.4125ms
+2025-05-20 23:40:40.281 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5251/api/ProductAllocation/get-product-allocations - null null
+2025-05-20 23:40:40.282 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5251/api/Allocation/get-calculated-allocations - null null
+2025-05-20 23:40:40.286 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:40:40.291 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:40:40.320 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5251/api/ProductAllocation/get-product-allocations - 204 null null 39.7848ms
+2025-05-20 23:40:40.328 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5251/api/Allocation/get-calculated-allocations - 204 null null 46.2303ms
+2025-05-20 23:40:40.337 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/ProductAllocation/get-product-allocations - null null
+2025-05-20 23:40:40.346 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/Allocation/get-calculated-allocations - null null
+2025-05-20 23:40:40.354 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:40:40.363 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:40:40.364 +05:30 [INF] Executing endpoint 'WisVestAPI.Controllers.ProductAllocationController.GetProductAllocations (WisVest)'
+2025-05-20 23:40:40.367 +05:30 [INF] Executing endpoint 'WisVestAPI.Controllers.AllocationController.GetCalculatedAllocations (WisVest)'
+2025-05-20 23:40:40.370 +05:30 [INF] Route matched with {action = "GetProductAllocations", controller = "ProductAllocation"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductAllocations() on controller WisVestAPI.Controllers.ProductAllocationController (WisVest).
+2025-05-20 23:40:40.371 +05:30 [INF] Route matched with {action = "GetCalculatedAllocations", controller = "Allocation"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCalculatedAllocations() on controller WisVestAPI.Controllers.AllocationController (WisVest).
+2025-05-20 23:40:40.380 +05:30 [INF] Attempting to read final allocation from JSON file: FinalAllocation.json
+2025-05-20 23:40:40.382 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`2[[System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[WisVestAPI.Models.Matrix.Product, WisVest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-20 23:40:40.383 +05:30 [INF] Final allocation JSON read successfully.
+2025-05-20 23:40:40.385 +05:30 [INF] Executed action WisVestAPI.Controllers.ProductAllocationController.GetProductAllocations (WisVest) in 8.6554ms
+2025-05-20 23:40:40.387 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-20 23:40:40.392 +05:30 [INF] Executed endpoint 'WisVestAPI.Controllers.ProductAllocationController.GetProductAllocations (WisVest)'
+2025-05-20 23:40:40.395 +05:30 [INF] Executed action WisVestAPI.Controllers.AllocationController.GetCalculatedAllocations (WisVest) in 14.6375ms
+2025-05-20 23:40:40.397 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/ProductAllocation/get-product-allocations - 200 null application/json; charset=utf-8 59.7036ms
+2025-05-20 23:40:40.399 +05:30 [INF] Executed endpoint 'WisVestAPI.Controllers.AllocationController.GetCalculatedAllocations (WisVest)'
+2025-05-20 23:40:40.415 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/Allocation/get-calculated-allocations - 200 null application/json; charset=utf-8 68.923ms
+2025-05-20 23:41:58.216 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5251/api/ProductAllocation/get-product-allocations - null null
+2025-05-20 23:41:58.217 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5251/api/Allocation/get-calculated-allocations - null null
+2025-05-20 23:41:58.220 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:41:58.222 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:41:58.223 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5251/api/ProductAllocation/get-product-allocations - 204 null null 7.0686ms
+2025-05-20 23:41:58.224 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5251/api/Allocation/get-calculated-allocations - 204 null null 6.8878ms
+2025-05-20 23:41:58.280 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/Allocation/get-calculated-allocations - null null
+2025-05-20 23:41:58.280 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/ProductAllocation/get-product-allocations - null null
+2025-05-20 23:41:58.285 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:41:58.287 +05:30 [INF] Executing endpoint 'WisVestAPI.Controllers.AllocationController.GetCalculatedAllocations (WisVest)'
+2025-05-20 23:41:58.287 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:41:58.298 +05:30 [INF] Route matched with {action = "GetCalculatedAllocations", controller = "Allocation"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCalculatedAllocations() on controller WisVestAPI.Controllers.AllocationController (WisVest).
+2025-05-20 23:41:58.299 +05:30 [INF] Executing endpoint 'WisVestAPI.Controllers.ProductAllocationController.GetProductAllocations (WisVest)'
+2025-05-20 23:41:58.302 +05:30 [INF] Attempting to read final allocation from JSON file: FinalAllocation.json
+2025-05-20 23:41:58.304 +05:30 [INF] Route matched with {action = "GetProductAllocations", controller = "ProductAllocation"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductAllocations() on controller WisVestAPI.Controllers.ProductAllocationController (WisVest).
+2025-05-20 23:41:58.313 +05:30 [INF] Final allocation JSON read successfully.
+2025-05-20 23:41:58.315 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-20 23:41:58.318 +05:30 [INF] Executed action WisVestAPI.Controllers.AllocationController.GetCalculatedAllocations (WisVest) in 16.2287ms
+2025-05-20 23:41:58.318 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`2[[System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[WisVestAPI.Models.Matrix.Product, WisVest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-20 23:41:58.354 +05:30 [INF] Executed endpoint 'WisVestAPI.Controllers.AllocationController.GetCalculatedAllocations (WisVest)'
+2025-05-20 23:41:58.367 +05:30 [INF] Executed action WisVestAPI.Controllers.ProductAllocationController.GetProductAllocations (WisVest) in 55.013ms
+2025-05-20 23:41:58.400 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/Allocation/get-calculated-allocations - 200 null application/json; charset=utf-8 119.6903ms
+2025-05-20 23:41:58.403 +05:30 [INF] Executed endpoint 'WisVestAPI.Controllers.ProductAllocationController.GetProductAllocations (WisVest)'
+2025-05-20 23:41:58.434 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/ProductAllocation/get-product-allocations - 200 null application/json; charset=utf-8 153.5194ms
+2025-05-20 23:42:36.042 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5251/api/ProductAllocation/get-product-allocations - null null
+2025-05-20 23:42:36.043 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5251/api/Allocation/get-calculated-allocations - null null
+2025-05-20 23:42:36.052 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:42:36.055 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:42:36.062 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5251/api/Allocation/get-calculated-allocations - 204 null null 18.3899ms
+2025-05-20 23:42:36.060 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5251/api/ProductAllocation/get-product-allocations - 204 null null 17.8558ms
+2025-05-20 23:42:36.084 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/ProductAllocation/get-product-allocations - null null
+2025-05-20 23:42:36.085 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/Allocation/get-calculated-allocations - null null
+2025-05-20 23:42:36.095 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:42:36.098 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:42:36.099 +05:30 [INF] Executing endpoint 'WisVestAPI.Controllers.ProductAllocationController.GetProductAllocations (WisVest)'
+2025-05-20 23:42:36.100 +05:30 [INF] Executing endpoint 'WisVestAPI.Controllers.AllocationController.GetCalculatedAllocations (WisVest)'
+2025-05-20 23:42:36.103 +05:30 [INF] Route matched with {action = "GetProductAllocations", controller = "ProductAllocation"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductAllocations() on controller WisVestAPI.Controllers.ProductAllocationController (WisVest).
+2025-05-20 23:42:36.104 +05:30 [INF] Route matched with {action = "GetCalculatedAllocations", controller = "Allocation"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCalculatedAllocations() on controller WisVestAPI.Controllers.AllocationController (WisVest).
+2025-05-20 23:42:36.112 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`2[[System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[WisVestAPI.Models.Matrix.Product, WisVest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-20 23:42:36.113 +05:30 [INF] Attempting to read final allocation from JSON file: FinalAllocation.json
+2025-05-20 23:42:36.116 +05:30 [INF] Executed action WisVestAPI.Controllers.ProductAllocationController.GetProductAllocations (WisVest) in 5.4017ms
+2025-05-20 23:42:36.118 +05:30 [INF] Final allocation JSON read successfully.
+2025-05-20 23:42:36.119 +05:30 [INF] Executed endpoint 'WisVestAPI.Controllers.ProductAllocationController.GetProductAllocations (WisVest)'
+2025-05-20 23:42:36.120 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-20 23:42:36.125 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/ProductAllocation/get-product-allocations - 200 null application/json; charset=utf-8 40.9526ms
+2025-05-20 23:42:36.128 +05:30 [INF] Executed action WisVestAPI.Controllers.AllocationController.GetCalculatedAllocations (WisVest) in 14.1797ms
+2025-05-20 23:42:36.134 +05:30 [INF] Executed endpoint 'WisVestAPI.Controllers.AllocationController.GetCalculatedAllocations (WisVest)'
+2025-05-20 23:42:36.136 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/Allocation/get-calculated-allocations - 200 null application/json; charset=utf-8 51.1993ms
+2025-05-20 23:42:38.950 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/ProductAllocation/get-product-allocations - null null
+2025-05-20 23:42:38.953 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/Allocation/get-calculated-allocations - null null
+2025-05-20 23:42:38.957 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:42:38.960 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:42:38.963 +05:30 [INF] Executing endpoint 'WisVestAPI.Controllers.ProductAllocationController.GetProductAllocations (WisVest)'
+2025-05-20 23:42:38.966 +05:30 [INF] Executing endpoint 'WisVestAPI.Controllers.AllocationController.GetCalculatedAllocations (WisVest)'
+2025-05-20 23:42:38.970 +05:30 [INF] Route matched with {action = "GetProductAllocations", controller = "ProductAllocation"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductAllocations() on controller WisVestAPI.Controllers.ProductAllocationController (WisVest).
+2025-05-20 23:42:38.987 +05:30 [INF] Route matched with {action = "GetCalculatedAllocations", controller = "Allocation"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCalculatedAllocations() on controller WisVestAPI.Controllers.AllocationController (WisVest).
+2025-05-20 23:42:38.999 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`2[[System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[WisVestAPI.Models.Matrix.Product, WisVest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-20 23:42:39.000 +05:30 [INF] Attempting to read final allocation from JSON file: FinalAllocation.json
+2025-05-20 23:42:39.006 +05:30 [INF] Executed action WisVestAPI.Controllers.ProductAllocationController.GetProductAllocations (WisVest) in 10.4145ms
+2025-05-20 23:42:39.009 +05:30 [INF] Final allocation JSON read successfully.
+2025-05-20 23:42:39.010 +05:30 [INF] Executed endpoint 'WisVestAPI.Controllers.ProductAllocationController.GetProductAllocations (WisVest)'
+2025-05-20 23:42:39.011 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-20 23:42:39.013 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/ProductAllocation/get-product-allocations - 200 null application/json; charset=utf-8 62.1287ms
+2025-05-20 23:42:39.015 +05:30 [INF] Executed action WisVestAPI.Controllers.AllocationController.GetCalculatedAllocations (WisVest) in 14.8838ms
+2025-05-20 23:42:39.024 +05:30 [INF] Executed endpoint 'WisVestAPI.Controllers.AllocationController.GetCalculatedAllocations (WisVest)'
+2025-05-20 23:42:39.025 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/Allocation/get-calculated-allocations - 200 null application/json; charset=utf-8 72.6285ms
+2025-05-20 23:43:15.400 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5251/api/ProductAllocation/get-product-allocations - null null
+2025-05-20 23:43:15.401 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5251/api/Allocation/get-calculated-allocations - null null
+2025-05-20 23:43:15.404 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:43:15.408 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:43:15.410 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5251/api/ProductAllocation/get-product-allocations - 204 null null 9.5857ms
+2025-05-20 23:43:15.412 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5251/api/Allocation/get-calculated-allocations - 204 null null 11.0247ms
+2025-05-20 23:43:15.416 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/ProductAllocation/get-product-allocations - null null
+2025-05-20 23:43:15.426 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/Allocation/get-calculated-allocations - null null
+2025-05-20 23:43:15.432 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:43:15.435 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:43:15.435 +05:30 [INF] Executing endpoint 'WisVestAPI.Controllers.ProductAllocationController.GetProductAllocations (WisVest)'
+2025-05-20 23:43:15.437 +05:30 [INF] Executing endpoint 'WisVestAPI.Controllers.AllocationController.GetCalculatedAllocations (WisVest)'
+2025-05-20 23:43:15.438 +05:30 [INF] Route matched with {action = "GetProductAllocations", controller = "ProductAllocation"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductAllocations() on controller WisVestAPI.Controllers.ProductAllocationController (WisVest).
+2025-05-20 23:43:15.440 +05:30 [INF] Route matched with {action = "GetCalculatedAllocations", controller = "Allocation"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCalculatedAllocations() on controller WisVestAPI.Controllers.AllocationController (WisVest).
+2025-05-20 23:43:15.445 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`2[[System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[WisVestAPI.Models.Matrix.Product, WisVest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-20 23:43:15.448 +05:30 [INF] Attempting to read final allocation from JSON file: FinalAllocation.json
+2025-05-20 23:43:15.451 +05:30 [INF] Executed action WisVestAPI.Controllers.ProductAllocationController.GetProductAllocations (WisVest) in 7.1419ms
+2025-05-20 23:43:15.452 +05:30 [INF] Final allocation JSON read successfully.
+2025-05-20 23:43:15.456 +05:30 [INF] Executed endpoint 'WisVestAPI.Controllers.ProductAllocationController.GetProductAllocations (WisVest)'
+2025-05-20 23:43:15.458 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-20 23:43:15.460 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/ProductAllocation/get-product-allocations - 200 null application/json; charset=utf-8 43.4625ms
+2025-05-20 23:43:15.462 +05:30 [INF] Executed action WisVestAPI.Controllers.AllocationController.GetCalculatedAllocations (WisVest) in 14.049ms
+2025-05-20 23:43:15.468 +05:30 [INF] Executed endpoint 'WisVestAPI.Controllers.AllocationController.GetCalculatedAllocations (WisVest)'
+2025-05-20 23:43:15.473 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/Allocation/get-calculated-allocations - 200 null application/json; charset=utf-8 45.7668ms
+2025-05-20 23:43:20.665 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/ProductAllocation/get-product-allocations - null null
+2025-05-20 23:43:20.666 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/Allocation/get-calculated-allocations - null null
+2025-05-20 23:43:20.669 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:43:20.672 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:43:20.679 +05:30 [INF] Executing endpoint 'WisVestAPI.Controllers.AllocationController.GetCalculatedAllocations (WisVest)'
+2025-05-20 23:43:20.678 +05:30 [INF] Executing endpoint 'WisVestAPI.Controllers.ProductAllocationController.GetProductAllocations (WisVest)'
+2025-05-20 23:43:20.681 +05:30 [INF] Route matched with {action = "GetCalculatedAllocations", controller = "Allocation"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCalculatedAllocations() on controller WisVestAPI.Controllers.AllocationController (WisVest).
+2025-05-20 23:43:20.683 +05:30 [INF] Route matched with {action = "GetProductAllocations", controller = "ProductAllocation"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductAllocations() on controller WisVestAPI.Controllers.ProductAllocationController (WisVest).
+2025-05-20 23:43:20.686 +05:30 [INF] Attempting to read final allocation from JSON file: FinalAllocation.json
+2025-05-20 23:43:20.693 +05:30 [INF] Final allocation JSON read successfully.
+2025-05-20 23:43:20.693 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`2[[System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[WisVestAPI.Models.Matrix.Product, WisVest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-20 23:43:20.694 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-20 23:43:20.697 +05:30 [INF] Executed action WisVestAPI.Controllers.ProductAllocationController.GetProductAllocations (WisVest) in 5.8129ms
+2025-05-20 23:43:20.698 +05:30 [INF] Executed action WisVestAPI.Controllers.AllocationController.GetCalculatedAllocations (WisVest) in 12.2525ms
+2025-05-20 23:43:20.701 +05:30 [INF] Executed endpoint 'WisVestAPI.Controllers.ProductAllocationController.GetProductAllocations (WisVest)'
+2025-05-20 23:43:20.703 +05:30 [INF] Executed endpoint 'WisVestAPI.Controllers.AllocationController.GetCalculatedAllocations (WisVest)'
+2025-05-20 23:43:20.706 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/ProductAllocation/get-product-allocations - 200 null application/json; charset=utf-8 41.6226ms
+2025-05-20 23:43:20.710 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/Allocation/get-calculated-allocations - 200 null application/json; charset=utf-8 43.8372ms
+2025-05-20 23:44:23.067 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5251/api/auth/login - null null
+2025-05-20 23:44:23.069 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:44:23.070 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5251/api/auth/login - 204 null null 3.3807ms
+2025-05-20 23:44:23.077 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5251/api/auth/login - application/json 46
+2025-05-20 23:44:23.086 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:44:23.087 +05:30 [INF] Executing endpoint 'WisVestAPI.Controllers.AuthController.Login (WisVest)'
+2025-05-20 23:44:23.101 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(LoginRequest) on controller WisVestAPI.Controllers.AuthController (WisVest).
+2025-05-20 23:44:23.330 +05:30 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-20 23:44:23.350 +05:30 [INF] Executed action WisVestAPI.Controllers.AuthController.Login (WisVest) in 247.0824ms
+2025-05-20 23:44:23.354 +05:30 [INF] Executed endpoint 'WisVestAPI.Controllers.AuthController.Login (WisVest)'
+2025-05-20 23:44:23.357 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5251/api/auth/login - 401 null application/json; charset=utf-8 279.7325ms
+2025-05-20 23:44:32.237 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5251/api/auth/login - null null
+2025-05-20 23:44:32.244 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:44:32.244 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5251/api/auth/login - 204 null null 7.3606ms
+2025-05-20 23:44:32.246 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5251/api/auth/login - application/json 47
+2025-05-20 23:44:32.257 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:44:32.264 +05:30 [INF] Executing endpoint 'WisVestAPI.Controllers.AuthController.Login (WisVest)'
+2025-05-20 23:44:32.266 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(LoginRequest) on controller WisVestAPI.Controllers.AuthController (WisVest).
+2025-05-20 23:44:32.510 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-20 23:44:32.511 +05:30 [INF] Executed action WisVestAPI.Controllers.AuthController.Login (WisVest) in 243.0901ms
+2025-05-20 23:44:32.514 +05:30 [INF] Executed endpoint 'WisVestAPI.Controllers.AuthController.Login (WisVest)'
+2025-05-20 23:44:32.515 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5251/api/auth/login - 200 null application/json; charset=utf-8 268.6832ms
+2025-05-20 23:44:41.018 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5251/api/Products/products - null null
+2025-05-20 23:44:41.022 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:44:41.025 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5251/api/Products/products - 204 null null 6.1791ms
+2025-05-20 23:44:41.032 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/Products/products - null null
+2025-05-20 23:44:41.035 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:44:41.050 +05:30 [INF] Executing endpoint 'WisVestAPI.Controllers.ProductsController.LoadProducts (WisVest)'
+2025-05-20 23:44:41.101 +05:30 [INF] Route matched with {action = "LoadProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoadProducts() on controller WisVestAPI.Controllers.ProductsController (WisVest).
+2025-05-20 23:44:41.124 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[WisVestAPI.Models.DTOs.ProductDTO, WisVest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-20 23:44:41.135 +05:30 [INF] Executed action WisVestAPI.Controllers.ProductsController.LoadProducts (WisVest) in 31.7679ms
+2025-05-20 23:44:41.136 +05:30 [INF] Executed endpoint 'WisVestAPI.Controllers.ProductsController.LoadProducts (WisVest)'
+2025-05-20 23:44:41.137 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/Products/products - 200 null application/json; charset=utf-8 105.0327ms
+2025-05-20 23:45:20.231 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5251/api/Allocation/compute - null null
+2025-05-20 23:45:20.234 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:45:20.236 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5251/api/Allocation/compute - 204 null null 5.1632ms
+2025-05-20 23:45:20.243 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5251/api/Allocation/compute - application/json 99
+2025-05-20 23:45:20.245 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:45:20.246 +05:30 [INF] Executing endpoint 'WisVestAPI.Controllers.AllocationController.GetAllocation (WisVest)'
+2025-05-20 23:45:20.248 +05:30 [INF] Route matched with {action = "GetAllocation", controller = "Allocation"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[WisVestAPI.Models.DTOs.AllocationResultDTO]] GetAllocation(WisVestAPI.Models.DTOs.UserInputDTO) on controller WisVestAPI.Controllers.AllocationController (WisVest).
+2025-05-20 23:45:20.266 +05:30 [INF] Starting allocation calculation...
+2025-05-20 23:45:20.276 +05:30 [INF] Allocation matrix loaded successfully.
+2025-05-20 23:45:20.278 +05:30 [INF] Looking up base allocation for key: Mid+Mod
+2025-05-20 23:45:20.279 +05:30 [INF] Base allocation found: {"equity":40,"fixedIncome":35,"commodities":10,"cash":10,"realEstate":5}
+2025-05-20 23:45:20.281 +05:30 [INF] Looking up age adjustment rules for key: 60+
+2025-05-20 23:45:20.282 +05:30 [INF] Age adjustments found: {"equity":-20,"fixedIncome":15,"realEstate":-5,"cash":10}
+2025-05-20 23:45:20.284 +05:30 [INF] Looking up goal tuning for goal: Retirement
+2025-05-20 23:45:20.285 +05:30 [INF] Goal tuning found: {"fixedIncome_boost":10,"realEstate_boost":5}
+2025-05-20 23:45:20.292 +05:30 [INF] Sub-allocations for equity: {"Large Cap":8,"Mid Cap":6,"Small Cap":6}
+2025-05-20 23:45:20.294 +05:30 [INF] Sub-allocations for fixedIncome: {"Gov Bonds":13.5,"Corp Bonds":18,"Fixed Dep":13.5}
+2025-05-20 23:45:20.296 +05:30 [INF] Sub-allocations for commodities: {"Precious Metals":4,"Energy":3,"Agriculture":3}
+2025-05-20 23:45:20.298 +05:30 [INF] Sub-allocations for cash: {"Liquid Mutual Funds":6,"Savings Acc":6,"T. Bill":8}
+2025-05-20 23:45:20.303 +05:30 [INF] Sub-allocations for realEstate: {"REITs":1.88,"Residential Prop":1.25,"Commercial Prop":1.88}
+2025-05-20 23:45:20.308 +05:30 [INF] Added sub-assets for equity: {"Large Cap":8,"Mid Cap":6,"Small Cap":6}
+2025-05-20 23:45:20.310 +05:30 [INF] Added sub-assets for fixedIncome: {"Gov Bonds":13.5,"Corp Bonds":18,"Fixed Dep":13.5}
+2025-05-20 23:45:20.313 +05:30 [INF] Added sub-assets for commodities: {"Precious Metals":4,"Energy":3,"Agriculture":3}
+2025-05-20 23:45:20.314 +05:30 [INF] Added sub-assets for cash: {"Liquid Mutual Funds":6,"Savings Acc":6,"T. Bill":8}
+2025-05-20 23:45:20.316 +05:30 [INF] Added sub-assets for realEstate: {"REITs":1.88,"Residential Prop":1.25,"Commercial Prop":1.88}
+2025-05-20 23:45:20.318 +05:30 [INF] Final formatted allocation: {"equity":{"percentage":20,"subAssets":{"Large Cap":8,"Mid Cap":6,"Small Cap":6}},"fixedIncome":{"percentage":45,"subAssets":{"Gov Bonds":13.5,"Corp Bonds":18,"Fixed Dep":13.5}},"commodities":{"percentage":10,"subAssets":{"Precious Metals":4,"Energy":3,"Agriculture":3}},"cash":{"percentage":20,"subAssets":{"Liquid Mutual Funds":6,"Savings Acc":6,"T. Bill":8}},"realEstate":{"percentage":5,"subAssets":{"REITs":1.88,"Residential Prop":1.25,"Commercial Prop":1.88}}}
+2025-05-20 23:45:20.331 +05:30 [INF] Final allocation saved successfully to FinalAllocation.json
+2025-05-20 23:45:20.333 +05:30 [INF] Final formatted allocation: {"equity":{"percentage":20,"subAssets":{"Large Cap":8,"Mid Cap":6,"Small Cap":6}},"fixedIncome":{"percentage":45,"subAssets":{"Gov Bonds":13.5,"Corp Bonds":18,"Fixed Dep":13.5}},"commodities":{"percentage":10,"subAssets":{"Precious Metals":4,"Energy":3,"Agriculture":3}},"cash":{"percentage":20,"subAssets":{"Liquid Mutual Funds":6,"Savings Acc":6,"T. Bill":8}},"realEstate":{"percentage":5,"subAssets":{"REITs":1.88,"Residential Prop":1.25,"Commercial Prop":1.88}}}
+2025-05-20 23:45:20.335 +05:30 [INF] Executing OkObjectResult, writing value of type 'WisVestAPI.Models.DTOs.AllocationResultDTO'.
+2025-05-20 23:45:20.336 +05:30 [INF] Executed action WisVestAPI.Controllers.AllocationController.GetAllocation (WisVest) in 76.9261ms
+2025-05-20 23:45:20.337 +05:30 [INF] Executed endpoint 'WisVestAPI.Controllers.AllocationController.GetAllocation (WisVest)'
+2025-05-20 23:45:20.345 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5251/api/Allocation/compute - 200 null application/json; charset=utf-8 101.4163ms
+2025-05-20 23:45:20.349 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5251/api/ProductAllocation/calculate-product-allocations?targetAmount=100000&investmentHorizon=4 - null null
+2025-05-20 23:45:20.352 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:45:20.353 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5251/api/ProductAllocation/calculate-product-allocations?targetAmount=100000&investmentHorizon=4 - 204 null null 3.9183ms
+2025-05-20 23:45:20.363 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5251/api/ProductAllocation/calculate-product-allocations?targetAmount=100000&investmentHorizon=4 - application/json 477
+2025-05-20 23:45:20.367 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:45:20.369 +05:30 [INF] Executing endpoint 'WisVestAPI.Controllers.ProductAllocationController.CalculateProductAllocations (WisVest)'
+2025-05-20 23:45:20.371 +05:30 [INF] Route matched with {action = "CalculateProductAllocations", controller = "ProductAllocation"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CalculateProductAllocations(WisVestAPI.Models.DTOs.AllocationResultDTO, Double, Int32) on controller WisVestAPI.Controllers.ProductAllocationController (WisVest).
+2025-05-20 23:45:20.384 +05:30 [INF] Sub-allocation Data Received: {"Assets":{"equity":{"Percentage":20,"SubAssets":{"Large Cap":8,"Mid Cap":6,"Small Cap":6}},"fixedIncome":{"Percentage":45,"SubAssets":{"Gov Bonds":13.5,"Corp Bonds":18,"Fixed Dep":13.5}},"commodities":{"Percentage":10,"SubAssets":{"Precious Metals":4,"Energy":3,"Agriculture":3}},"cash":{"Percentage":20,"SubAssets":{"Liquid Mutual Funds":6,"Savings Acc":6,"T. Bill":8}},"realEstate":{"Percentage":5,"SubAssets":{"REITs":1.88,"Residential Prop":1.25,"Commercial Prop":1.88}}}}
+2025-05-20 23:45:20.387 +05:30 [INF] Target Amount: 100000
+2025-05-20 23:45:20.393 +05:30 [INF] Investment Horizon: 4
+2025-05-20 23:45:20.395 +05:30 [INF] Starting product allocation calculation.
+2025-05-20 23:45:20.399 +05:30 [INF] Calculating investment amount with PercentageSplit: 4.17, TargetAmount: 100000, AnnualReturn: 10, InvestmentHorizon: 4.
+2025-05-20 23:45:20.402 +05:30 [INF] Calculated investment amount: 2848.17.
+2025-05-20 23:45:20.403 +05:30 [INF] Calculating investment amount with PercentageSplit: 3.83, TargetAmount: 100000, AnnualReturn: 9.2, InvestmentHorizon: 4.
+2025-05-20 23:45:20.410 +05:30 [INF] Calculated investment amount: 2693.45.
+2025-05-20 23:45:20.411 +05:30 [INF] Calculating investment amount with PercentageSplit: 3.19, TargetAmount: 100000, AnnualReturn: 12.5, InvestmentHorizon: 4.
+2025-05-20 23:45:20.413 +05:30 [INF] Calculated investment amount: 1991.5.
+2025-05-20 23:45:20.414 +05:30 [INF] Calculating investment amount with PercentageSplit: 2.81, TargetAmount: 100000, AnnualReturn: 11, InvestmentHorizon: 4.
+2025-05-20 23:45:20.417 +05:30 [INF] Calculated investment amount: 1851.03.
+2025-05-20 23:45:20.419 +05:30 [INF] Calculating investment amount with PercentageSplit: 3.09, TargetAmount: 100000, AnnualReturn: 14, InvestmentHorizon: 4.
+2025-05-20 23:45:20.421 +05:30 [INF] Calculated investment amount: 1829.53.
+2025-05-20 23:45:20.425 +05:30 [INF] Calculating investment amount with PercentageSplit: 2.91, TargetAmount: 100000, AnnualReturn: 13.2, InvestmentHorizon: 4.
+2025-05-20 23:45:20.427 +05:30 [INF] Calculated investment amount: 1772.18.
+2025-05-20 23:45:20.427 +05:30 [INF] Calculating investment amount with PercentageSplit: 6.89, TargetAmount: 100000, AnnualReturn: 5, InvestmentHorizon: 4.
+2025-05-20 23:45:20.429 +05:30 [INF] Calculated investment amount: 5668.42.
+2025-05-20 23:45:20.430 +05:30 [INF] Calculating investment amount with PercentageSplit: 6.61, TargetAmount: 100000, AnnualReturn: 4.8, InvestmentHorizon: 4.
+2025-05-20 23:45:20.432 +05:30 [INF] Calculated investment amount: 5479.69.
+2025-05-20 23:45:20.432 +05:30 [INF] Calculating investment amount with PercentageSplit: 8.81, TargetAmount: 100000, AnnualReturn: 6.8, InvestmentHorizon: 4.
+2025-05-20 23:45:20.434 +05:30 [INF] Calculated investment amount: 6771.59.
+2025-05-20 23:45:20.435 +05:30 [INF] Calculating investment amount with PercentageSplit: 9.19, TargetAmount: 100000, AnnualReturn: 7.1, InvestmentHorizon: 4.
+2025-05-20 23:45:20.436 +05:30 [INF] Calculated investment amount: 6984.86.
+2025-05-20 23:45:20.437 +05:30 [INF] Calculating investment amount with PercentageSplit: 6.63, TargetAmount: 100000, AnnualReturn: 5.5, InvestmentHorizon: 4.
+2025-05-20 23:45:20.441 +05:30 [INF] Calculated investment amount: 5351.85.
+2025-05-20 23:45:20.442 +05:30 [INF] Calculating investment amount with PercentageSplit: 6.87, TargetAmount: 100000, AnnualReturn: 5.7, InvestmentHorizon: 4.
+2025-05-20 23:45:20.445 +05:30 [INF] Calculated investment amount: 5503.73.
+2025-05-20 23:45:20.446 +05:30 [INF] Calculating investment amount with PercentageSplit: 2.21, TargetAmount: 100000, AnnualReturn: 7.8, InvestmentHorizon: 4.
+2025-05-20 23:45:20.447 +05:30 [INF] Calculated investment amount: 1636.5.
+2025-05-20 23:45:20.448 +05:30 [INF] Calculating investment amount with PercentageSplit: 1.79, TargetAmount: 100000, AnnualReturn: 6.3, InvestmentHorizon: 4.
+2025-05-20 23:45:20.450 +05:30 [INF] Calculated investment amount: 1401.91.
+2025-05-20 23:45:20.451 +05:30 [INF] Calculating investment amount with PercentageSplit: 1.42, TargetAmount: 100000, AnnualReturn: 9.2, InvestmentHorizon: 4.
+2025-05-20 23:45:20.452 +05:30 [INF] Calculated investment amount: 998.61.
+2025-05-20 23:45:20.453 +05:30 [INF] Calculating investment amount with PercentageSplit: 1.58, TargetAmount: 100000, AnnualReturn: 10.3, InvestmentHorizon: 4.
+2025-05-20 23:45:20.454 +05:30 [INF] Calculated investment amount: 1067.47.
+2025-05-20 23:45:20.458 +05:30 [INF] Calculating investment amount with PercentageSplit: 1.65, TargetAmount: 100000, AnnualReturn: 8.5, InvestmentHorizon: 4.
+2025-05-20 23:45:20.460 +05:30 [INF] Calculated investment amount: 1190.6.
+2025-05-20 23:45:20.462 +05:30 [INF] Calculating investment amount with PercentageSplit: 1.35, TargetAmount: 100000, AnnualReturn: 7, InvestmentHorizon: 4.
+2025-05-20 23:45:20.464 +05:30 [INF] Calculated investment amount: 1029.91.
+2025-05-20 23:45:20.465 +05:30 [INF] Calculating investment amount with PercentageSplit: 3.06, TargetAmount: 100000, AnnualReturn: 5.2, InvestmentHorizon: 4.
+2025-05-20 23:45:20.466 +05:30 [INF] Calculated investment amount: 2498.38.
+2025-05-20 23:45:20.467 +05:30 [INF] Calculating investment amount with PercentageSplit: 2.94, TargetAmount: 100000, AnnualReturn: 5, InvestmentHorizon: 4.
+2025-05-20 23:45:20.468 +05:30 [INF] Calculated investment amount: 2418.75.
+2025-05-20 23:45:20.468 +05:30 [INF] Calculating investment amount with PercentageSplit: 2.8, TargetAmount: 100000, AnnualReturn: 3.5, InvestmentHorizon: 4.
+2025-05-20 23:45:20.470 +05:30 [INF] Calculated investment amount: 2440.04.
+2025-05-20 23:45:20.471 +05:30 [INF] Calculating investment amount with PercentageSplit: 3.2, TargetAmount: 100000, AnnualReturn: 4, InvestmentHorizon: 4.
+2025-05-20 23:45:20.474 +05:30 [INF] Calculated investment amount: 2735.37.
+2025-05-20 23:45:20.475 +05:30 [INF] Calculating investment amount with PercentageSplit: 3.89, TargetAmount: 100000, AnnualReturn: 5.1, InvestmentHorizon: 4.
+2025-05-20 23:45:20.478 +05:30 [INF] Calculated investment amount: 3188.15.
+2025-05-20 23:45:20.479 +05:30 [INF] Calculating investment amount with PercentageSplit: 4.11, TargetAmount: 100000, AnnualReturn: 5.4, InvestmentHorizon: 4.
+2025-05-20 23:45:20.481 +05:30 [INF] Calculated investment amount: 3330.27.
+2025-05-20 23:45:20.482 +05:30 [INF] Calculating investment amount with PercentageSplit: 0.91, TargetAmount: 100000, AnnualReturn: 8.9, InvestmentHorizon: 4.
+2025-05-20 23:45:20.483 +05:30 [INF] Calculated investment amount: 647.04.
+2025-05-20 23:45:20.484 +05:30 [INF] Calculating investment amount with PercentageSplit: 0.97, TargetAmount: 100000, AnnualReturn: 9.5, InvestmentHorizon: 4.
+2025-05-20 23:45:20.591 +05:30 [INF] Calculated investment amount: 674.71.
+2025-05-20 23:45:20.592 +05:30 [INF] Calculating investment amount with PercentageSplit: 0.6, TargetAmount: 100000, AnnualReturn: 6.7, InvestmentHorizon: 4.
+2025-05-20 23:45:20.595 +05:30 [INF] Calculated investment amount: 462.91.
+2025-05-20 23:45:20.597 +05:30 [INF] Calculating investment amount with PercentageSplit: 0.65, TargetAmount: 100000, AnnualReturn: 7.3, InvestmentHorizon: 4.
+2025-05-20 23:45:20.598 +05:30 [INF] Calculated investment amount: 490.36.
+2025-05-20 23:45:20.598 +05:30 [INF] Calculating investment amount with PercentageSplit: 0.96, TargetAmount: 100000, AnnualReturn: 10.2, InvestmentHorizon: 4.
+2025-05-20 23:45:20.601 +05:30 [INF] Calculated investment amount: 650.95.
+2025-05-20 23:45:20.604 +05:30 [INF] Calculating investment amount with PercentageSplit: 0.92, TargetAmount: 100000, AnnualReturn: 9.8, InvestmentHorizon: 4.
+2025-05-20 23:45:20.608 +05:30 [INF] Calculated investment amount: 632.96.
+2025-05-20 23:45:20.652 +05:30 [INF] Product allocations saved to ProductAllocations.json
+2025-05-20 23:45:20.657 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[WisVestAPI.Models.Matrix.Product, WisVest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-20 23:45:20.665 +05:30 [INF] Executed action WisVestAPI.Controllers.ProductAllocationController.CalculateProductAllocations (WisVest) in 288.6139ms
+2025-05-20 23:45:20.669 +05:30 [INF] Executed endpoint 'WisVestAPI.Controllers.ProductAllocationController.CalculateProductAllocations (WisVest)'
+2025-05-20 23:45:20.670 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5251/api/ProductAllocation/calculate-product-allocations?targetAmount=100000&investmentHorizon=4 - 200 null application/json; charset=utf-8 307.5914ms
+2025-05-20 23:45:20.713 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5251/api/Allocation/get-calculated-allocations - null null
+2025-05-20 23:45:20.719 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5251/api/ProductAllocation/get-product-allocations - null null
+2025-05-20 23:45:20.825 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:45:20.828 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5251/api/Allocation/get-calculated-allocations - 204 null null 114.6903ms
+2025-05-20 23:45:20.827 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:45:20.831 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/Allocation/get-calculated-allocations - null null
+2025-05-20 23:45:20.854 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:45:20.835 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5251/api/ProductAllocation/get-product-allocations - 204 null null 115.6045ms
+2025-05-20 23:45:20.968 +05:30 [INF] Executing endpoint 'WisVestAPI.Controllers.AllocationController.GetCalculatedAllocations (WisVest)'
+2025-05-20 23:45:20.978 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5251/api/ProductAllocation/get-product-allocations - null null
+2025-05-20 23:45:20.979 +05:30 [INF] Route matched with {action = "GetCalculatedAllocations", controller = "Allocation"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCalculatedAllocations() on controller WisVestAPI.Controllers.AllocationController (WisVest).
+2025-05-20 23:45:21.020 +05:30 [INF] Attempting to read final allocation from JSON file: FinalAllocation.json
+2025-05-20 23:45:21.020 +05:30 [INF] CORS policy execution successful.
+2025-05-20 23:45:21.025 +05:30 [INF] Final allocation JSON read successfully.
+2025-05-20 23:45:21.027 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-20 23:45:21.033 +05:30 [INF] Executed action WisVestAPI.Controllers.AllocationController.GetCalculatedAllocations (WisVest) in 12.7115ms
+2025-05-20 23:45:21.035 +05:30 [INF] Executed endpoint 'WisVestAPI.Controllers.AllocationController.GetCalculatedAllocations (WisVest)'
+2025-05-20 23:45:21.026 +05:30 [INF] Executing endpoint 'WisVestAPI.Controllers.ProductAllocationController.GetProductAllocations (WisVest)'
+2025-05-20 23:45:21.048 +05:30 [INF] Route matched with {action = "GetProductAllocations", controller = "ProductAllocation"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProductAllocations() on controller WisVestAPI.Controllers.ProductAllocationController (WisVest).
+2025-05-20 23:45:21.042 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/Allocation/get-calculated-allocations - 200 null application/json; charset=utf-8 210.613ms
+2025-05-20 23:45:22.040 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`2[[System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[WisVestAPI.Models.Matrix.Product, WisVest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-20 23:45:22.153 +05:30 [INF] Executed action WisVestAPI.Controllers.ProductAllocationController.GetProductAllocations (WisVest) in 168.9109ms
+2025-05-20 23:45:22.181 +05:30 [INF] Executed endpoint 'WisVestAPI.Controllers.ProductAllocationController.GetProductAllocations (WisVest)'
+2025-05-20 23:45:22.200 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5251/api/ProductAllocation/get-product-allocations - 200 null application/json; charset=utf-8 1221.9252ms
